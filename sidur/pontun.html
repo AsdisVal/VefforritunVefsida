@@ -52,21 +52,33 @@
         <form>
             <fieldset>
                 <li>Réttur #N fimm reitir sem leyfa val úr titlum rétta á matseðli</li>
-                <li>Heimilisfang val um að skrifa inn heimilisfang</li>
+                <div>
+                    <label for="language">Heimilisfang ef þig langar</label>
+                    <input id="language" type="text" list="languages">
+                  </div>
             </fieldset>
         </form>
         <section>
             <h3>Þínar upplýsingar</h3>
-            <li>Ásdís Valtýsdóttir</li>
-            <li>asv29@hi.is</li>
-            <li>866 4341</li>
+            <li>Nafn: Ásdís Valtýsdóttir</li>
+            <li>Netfang: asv29@hi.is</li>
+            <li>Sími: 866 4341</li>
         </section>
     </article>
 
     <article>
         <h3>Samþykkja og panta</h3>
+        <form>
+            <fieldset>
+                <div>
+                    <label>
+                      <input name="register" type="checkbox">
+                      Ég samþykki skilmála Veitingastaðsins
+                    </label>
+                  </div>
+            </fieldset>
+        </form>
         <section>
-            <li>Ég samþykki skilmála Veitingastaðsins, box sem hægt er að haka í</li>
             <li>Panta, panti til að senda pöntun</li>
         </section>
     </article>
