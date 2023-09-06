@@ -3,36 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:description" content="Þetta er pöntunarsíðan á veitingastaðnum í viku 2.">
+    <meta property="og:image" content="/myndir/sharing.jpg">
+    <meta property="og:title" content="Panta">
+    <title>Panta</title>
 </head>
 <body>
-    <article>
+    
         <header>
             <h1>Pantanir</h1>
         </header>
         <p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
         <p>Hér er valmynd sem vísar á hinar síðurnar:</p>
         <ul>
-            <li><a href="/sidur/um.html">Um okkur</a>
-            <li><a href="/sidur/matsedill.html">Matseðill</a>
-            <li><a href="/index.html">Forsíða</a>
-            
+            <li><a href="../index.html">Forsíða</a>
+            <li><a href="../sidur/um.html">Um okkur</a>
+            <li><a href="../sidur/matsedill.html">Matseðill</a>           
         </ul>
-
-    </article>   
-   <!-- <form>
-        <fieldset>
-            <input type="date" id="date">
-            <label for="date"> Veldu dagsetningu</label>
-        </fieldset>
-    </form> -->
-    <article>
+    
         <form>
             <h3>Panta borð</h3>
             <fieldset>
                 <div>
                     <label for="time">Hvenær viltu borða?</label>
-                    <input type="time" id="time">
+                    <input type="datetime-local" id="time">
                 </div>
                 <div>
                     <label for="number">Hve mörg?</label>
@@ -55,24 +49,22 @@
                 </div>
             </fieldset>
         </form>
-    </article>
     
-    <article>
         <h3>Panta mat</h3>
         <form>
             <fieldset>
                 <div>
                     <label for="order1">Réttur 1</label>
-                    <input name="order1" type="text" id="order1"
+                    <input name="order1" type="text" id="order1">
                 </div>
                 <div>
                     <label for="order2">Réttur 2</label>
-                    <input name="order2" type="text" id="order2"
+                    <input name="order2" type="text" id="order2">
                     
                 </div>
                 <div>
                     <label for="order3">Réttur 3</label>
-                    <input name="order3" type="text" id="order3"
+                    <input name="order3" type="text" id="order3">
                 </div>
                 <div>
                     <label for="order4">Réttur 4</label>
@@ -83,13 +75,12 @@
                     <input name="order5" type="text" id="order5">
                     </div>
                 <div>
-                    <label for="address">Heimilisfang </label>
-                    <input name="address" type="text" id="address">
+                    <label for="mail">Heimilisfang </label>
+                    <input name="mail" type="email" id="mail">
                 </div>
             </fieldset>
         </form>
-    </article>
-    <article> 
+     
         <fieldset>
             <h3>Þínar upplýsingar</h3>
             <div>
@@ -105,9 +96,7 @@
                 <input type="text" id="phone" placeholder="000-0000" required>
             </div>
         </fieldset>
-    </article>
 
-    <article>
         <h3>Samþykkja og panta</h3>
         <form>
             <fieldset>
@@ -121,7 +110,7 @@
             <button>Panta</button>
         </form>        
     <nav><a href="../index.html">Aftur á forsíðu</a></nav>
-    </article>
+    
     <footer>
         <h2>Opnunartími</h2>
         <dl>
