@@ -7,6 +7,7 @@
     <meta property="og:image" content="/myndir/sharing.jpg">
     <meta property="og:title" content="Panta">
     <title>Panta</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
@@ -17,72 +18,91 @@
         <p>Hér er valmynd sem vísar á hinar síðurnar:</p>
         <ul>
             <li><a href="../index.html">Forsíða</a>
-            <li><a href="../sidur/um.html">Um okkur</a>
-            <li><a href="../sidur/matsedill.html">Matseðill</a>           
+            <li><a href="../sidur/um.html">Um Veitingastaðinn</a>
+            <li><a href="../sidur/matsedill.html">Matseðill</a> 
+            <li>Pöntunarsíða</li>          
         </ul>
     
         <form>
-            <h3>Panta borð</h3>
             <fieldset>
+                <legend>Panta borð</legend>
                 <div>
-                    <label for="time">Hvenær viltu borða?</label>
-                    <input type="datetime-local" id="time">
+                    <label for="time">Hvenær viltu koma?</label>
+                    <div>
+                        <input type="datetime-local" id="time">
+                    </div>
                 </div>
                 <div>
                     <label for="number">Hve mörg?</label>
+                    <div>
                     <select id="number" name="number">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
                 </div>
                 <div>
                     <label for="comment">Viltu taka eitthvað fram?</label>
-                    <textarea name="comment" placeholder="Ofnæmi, etc. " id="comment"></textarea>
+                    <div>
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
                 </div>
             </fieldset>
         </form>
     
-        <h3>Panta mat</h3>
         <form>
             <fieldset>
+                <legend>Panta mat</legend>
                 <div>
-                    <label for="order1">Réttur 1</label>
-                    <input name="order1" type="text" id="order1">
+                    <label for="order1">Réttur #1</label>
+                    <div>
+                        <input name="order1" type="text" id="order1">
+                    </div>
                 </div>
                 <div>
-                    <label for="order2">Réttur 2</label>
-                    <input name="order2" type="text" id="order2">
+                    <label for="order2">Réttur #2</label>
+                    <div>
+                        <input name="order2" type="text" id="order2">
+                    </div>
                     
                 </div>
                 <div>
-                    <label for="order3">Réttur 3</label>
-                    <input name="order3" type="text" id="order3">
+                    <label for="order3">Réttur #3</label>
+                    <div>
+                        <input name="order3" type="text" id="order3">
+                    </div>
                 </div>
                 <div>
-                    <label for="order4">Réttur 4</label>
-                    <input name="order4" type="text" id="order4">
+                    <label for="order4">Réttur #4</label>
+                    <div>
+                        <input name="order4" type="text" id="order4">
                     </div>
+                </div>
                 <div>
-                    <label for="order5">Réttur 5</label>
-                    <input name="order5" type="text" id="order5">
+                    <label for="order5">Réttur #5</label>
+                    <div>
+                        <input name="order5" type="text" id="order5">
                     </div>
+                </div>
                 <div>
                     <label for="mail">Heimilisfang </label>
-                    <input name="mail" type="email" id="mail">
+                    <div>
+                        <input name="mail" type="email" id="mail">
+                    </div>
                 </div>
             </fieldset>
         </form>
      
         <fieldset>
-            <h3>Þínar upplýsingar</h3>
+            <legend>Þínar upplýsingar</legend>
             <div>
                 <label>Nafn:</label>
                 <input type="text" id="name" required>  
@@ -97,17 +117,17 @@
             </div>
         </fieldset>
 
-        <h3>Samþykkja og panta</h3>
         <form>
             <fieldset>
+                <legend>Samþykkja og panta</legend>
                 <div>
                     <label>
                       <input name="Agreement" type="checkbox">
                       Ég samþykki skilmála Veitingastaðsins
                     </label>
                   </div>
+                  <button>Panta</button>
             </fieldset>
-            <button>Panta</button>
         </form>        
     <nav><a href="../index.html">Aftur á forsíðu</a></nav>
     

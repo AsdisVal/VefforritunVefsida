@@ -1,0 +1,70 @@
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  }
+  /* og látum erfast á allt */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  @font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap) format('serif');
+  }
+
+ /* p {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: 400;
+  }*/
+
+  footer {
+    background-color: #2f0505;
+    text-align: center;
+    border: 8px;
+    border-color: #ffe7ae;
+    color:#fff1cf;
+   /* font-family: 'Lora';    
+    font-style: normal;
+    font-weight: 400; */
+ }
+
+ .restaurant-intro {
+    text-align: center;
+    background-color: #2f0505;
+    color: #fff1cf;
+    /*border-width: 8px;
+    border-bottom-color: #ffe7ae;*/
+ }
+
+ .website-menu-links {
+    text-align: center;
+    background-color: #fff9ee;
+    color: #2f0505;
+ }
+
+ 
+
+ 
+
