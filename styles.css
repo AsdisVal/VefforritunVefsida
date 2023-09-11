@@ -6,6 +6,7 @@
     font-style: normal;
     font-style: bold;
     font-size: 1rem;
+    /* max-width: 900px; */
 }
   
   /* Reiknum stærð á öllum boxum sem border-box */
@@ -43,15 +44,49 @@
 
 
 header {
-    border-bottom: 0.5rem #ffe7ae solid;
     text-align: center;
     background-color: #2f0505;
     color: #fff1cf;
+    width: 100%; 
+    padding-bottom: 1rem;
+    border-top: 0.5rem #2f0505 solid;
+    border-bottom: 0.5rem #ffe7ae solid;
 }
 
-a{
-    color:#2f0505
-}
+a{ 
+    color:#2f0505 
+} 
+
+  nav { 
+    padding:1rem;
+    background-color: #fff9ee;
+    color: #2f0505;
+    
+ }
+
+ nav ul{
+    text-align: center;
+ }
+
+ nav ul li{
+    display: inline;
+    padding-right: 1rem;
+ }
+
+ nav ul li:last-child {
+    padding-right: 0;
+ }
+
+ main {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: fit-content;
+ }
+
+ main div.popular-dishes dl {
+    display: inline;
+ }
 
 
  .website-menu-links {
@@ -59,6 +94,11 @@ a{
     background-color: #fff9ee;
     color: #2f0505;
     padding:1rem;
+    /* display: inline; */
+ }
+
+ .pop-dish {
+    border-bottom: 0.5rem #ffe7ae solid;
  }
 
  
@@ -70,73 +110,56 @@ a{
      
  }
 
+ .allt-f-ofan {
+    border-bottom: 0.5rem #ffe7ae solid;
+ }
+
  .menu-and-order{
-    width: 50%;
+    float: left;
+    width: 100%;
     box-sizing: border-box;
     padding-left: 10px;
-    /* border-right: 5px red solid; */
-    /* border-left: 5px red solid; */
-    /* border-top: 5px red solid; */
-    /* border-bottom: 5px red solid; */
+    
  }
 
- .menu1 {
-    float:left;
-    /* margin-left: 10rem; */
- }
-
- .menu2 {
-    float: right;
-    /* margin-right: 10rem; */
- }
-
- .dishes {
-    /* border-right: 5px red solid; */
-    /* border-left: 5px red solid; */
-    /* border-top: 5px red solid; */
-    /* border-bottom: 5px red solid; */
-    padding-top: 10rem;
- }
 
 .popular-dishes {
-    /* border-right: 5px red solid; */
-    /* border-left: 5px red solid; */
-    /* border-top: 5px red solid; */
-    /* border-bottom: 5px red solid; */
     box-sizing: border-box;
 }
 
 .check-it-out {
-    /* border-right: 5px red solid; */
-    /* border-left: 5px red solid; */
-    /* border-top: 5px #ffe7ae solid; */
-    /* padding-top: 10px; */
-    padding-bottom: 8px;
+     padding-bottom: 8px;
     margin-left: 30px;
 }
 
 footer {
-    float: left;
     background-color: #2f0505;
     text-align: center;
     border: 8px;
     border-color: #ffe7ae;
     color:#fff1cf;
-    float: left;
+    float: left; 
     width: 100%;
     box-sizing: border-box;
-    border-top: #ffe7ae;
+    border-top: 0.5rem #ffe7ae solid;
     border-width: 5px;
+    margin-bottom: 1rem;
+
  }
 
- .fótur1 {
-    float: left;
-    margin-left: 25rem;
- }
- .fótur2 {
-    float: right;
-    margin-right: 25rem;
- }
+footer .content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+footer .content .box {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: center;
+}
 
 
 
