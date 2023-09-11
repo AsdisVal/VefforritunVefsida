@@ -8,90 +8,91 @@
     <meta property="og:title" content="Verkefni 2">
     <meta property="og:image" content="/myndir/sharing.jpg">
     <title>Forsíða</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
     <main>
-        <section class="restaurant-intro">
+        <header>
             <h1>Veitingastaðurinn</h1>
             <p>Á Veitingastaðnum hugsum við vel um þig og gefum þér gott að borða.</p>  
-        
-        </section>
+        </header>
         <div class="website-menu-links">
-            <p>Hér er valmynd sem vísar á hinar síðurnar:</p>
-        <ul>
-            <li><a href="../sidur/um.html">Um Veitingastaðinn</a>
-            <li><a href="../sidur/matsedill.html">Matseðill</a>
-            <li><a href="../sidur/pontun.html">Panta</a> 
-        </ul>
+            <p><strong>Forsíða</strong>   <a href="../sidur/um.html">Um Veitingastaðinn</a>   <a href="../sidur/matsedill.html">Matseðill</a>   <a href="../sidur/pontun.html">Panta</a></p>
         </div>
-            <section class="opening-hours">
-                <h3>Opnunartími</h3>
-                <dl>
-                    <dt>Mánudaga til fimmtudaga</dt>
-                    <dd>09:00–18:00</dd>
+                <div class="block">
+                    <h3>Opnunartími</h3>
+                    <dl>
+                        <dt><strong>Mánudaga til fimmtudaga</strong></dt>
+                        <dd>09:00–18:00</dd>
+                
+                        <dt><strong>Föstudaga</strong></dt>
+                        <dd>10:00–22:00</dd>
+                
+                        <dt><strong>Laugardaga</strong></dt>
+                        <dd>11:00–22:00</dd>
+                
+                        <dt><strong>Sunnudaga</strong></dt>
+                        <dd>Lokað</dd>
+                    </dl>            
+                </div>                
+                <div class="block">
+                    <h3>Um okkur</h3>
+                    <p>Við erum hresst fólk sem útbýr mat alla daga nema sunnudaga.</p>
+                    <a  href = "/sidur/um.html"><strong>Lesa meira um okkur</strong></a>    
+                </div>
+                
             
-                    <dt>Föstudaga</dt>
-                    <dd>10:00–22:00</dd>
             
-                    <dt>Laugardaga</dt>
-                    <dd>11:00–22:00</dd>
-            
-                    <dt>Sunnudaga</dt>
-                    <dd>Lokað</dd>
-                </dl>            
-            </section>              
-            
-            <section class="about-us">
-                <h3>Um okkur</h3>
-                <p>Við erum hresst fólk sem útbýr mat alla daga nema sunnudaga.</p>
-                <a  href = "/sidur/um.html">Lesa meira um okkur</a>    
-            </section>
-            
-            <section class="the-menu">
+            <section class="menu-and-order">
                 <h3>Matseðill</h3>
                 <p>Skoðaðu matseðilinn okkar!</p>
-                <a  href = "/sidur/matsedill.html">Skoða matseðilinn</a>
+                <a  href = "/sidur/matsedill.html"><strong>Skoða matseðilinn</strong></a>
             </section>
 
-            <section class="the-order">
+            <section class="menu-and-order">
                 <h3>Panta</h3>
                 <p>Pantaðu borð eða mat heim til þín!</p>
-                <a  href = "/sidur/pontun.html">Senda inn pöntun</a>
+                <a  href = "/sidur/pontun.html"><strong>Senda inn pöntun</strong></a>
             </section>
-                      
+            
+
+            <h2>Vinsælir réttir</h2>
+              <div class="popular-dishes">
+                  <dl>
+                     <dt><p><strong>Súpa dagsins</strong></p></dt>
+                     <dd>Dagleg ný súpa.</dd>
+                     <dd>1.850 kr.-</dd>
+                     <a href="/sidur/pontun.html"><strong>Panta</strong></a>
+
+                     <dt><p><strong>Lasagna</strong></p></dt>
+                     <dd>Lasagna með fersku salati.</dd>
+                     <dd>2.500 kr.-</dd>
+                     <a href="/sidur/pontun.html"><strong>Panta</strong></a>
+
+                     <dt><p><strong>Quesadilla</strong></p></dt>
+                     <dd>Quesadilla með osti og fersku salsa</dd>
+                     <dd>2.100 kr.-</dd>
+                     <a href="/sidur/pontun.html"><strong>Panta</strong></a>
+                        
+                     <dt><p><strong>Falafel með hummus</strong></p></dt>
+                     <dd>Falafel með hummus, pitu og fersku salati.</dd>
+                     <dd>2.000 kr.-</dd>
+                     <a href="/sidur/pontun.html"><strong>Panta</strong></a>
+                 </dl>
+             </div>
+            
                 
-            <section class="popular-dishes">
-                <h2>Vinsælir réttir</h2>
-                <div class="lasagna-quesadilla">
-                    <dl>
-                        <dt><p><strong>Lasagna</strong></p></dt>
-                        <dd>Lasagna með fersku salati.</dd>
-                        <dd>2.500 kr.-</dd>
-
-                    <dt><p><strong>Quesadilla</strong></p></dt>
-                        <dd>Quesadilla með osti og fersku salsa</dd>
-                        <dd>2.100 kr.-</dd>
-                    </dl>
-                </div>
-                <div class="falafel-soup">
-                    <dl>
-                        <dt><p><strong>Falafel með hummus</strong></p></dt>
-                        <dd>Falafel með hummus, pitu og fersku salati.</dd>
-                        <dd>2.000 kr.-</dd>
-
-                    <dt><p><strong>Súpa dagsins</strong></p></dt>
-                        <dd>Dagleg ný súpa.</dd>
-                        <dd>1.850 kr.-</dd>
-                    </dl>
-                </div>
-            </section>           
+            <section class="check-it-out">
+                <p> 
+                    <a href="/sidur/matsedill.html">Skoða matseðil</a> eða <a href="/sidur/pontun.html">panta</a>.
+                </p>
+            </section>          
         
     </main>  
 
-    <footer>
-     <section class="footer-opening-hours">
+    <footer class="footer">
+     <section class="footer">
             <h2>Opnunartími</h2>
          <dl>
             <dt>Mánudaga til fimmtudaga</dt>
@@ -108,7 +109,7 @@
          </dl>   
      </section>
 
-     <section class="footer-info-about-us">
+     <section class="footer">
         <h2>Hér erum við</h2>
         <p>Veitingastaðurinn ehf.</p>
         <p>Aðalgata 10</p>
