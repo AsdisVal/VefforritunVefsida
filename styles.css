@@ -2,7 +2,11 @@
 * {
     margin: 0;
     padding: 0;
-  }
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-style: bold;
+    font-size: 1rem;
+}
   
   /* Reiknum stærð á öllum boxum sem border-box */
   html {
@@ -39,16 +43,18 @@
 
 
 header {
-    border-bottom: 5px #ffe7ae solid;
+    border-bottom: 0.5rem #ffe7ae solid;
     text-align: center;
     background-color: #2f0505;
     color: #fff1cf;
 }
 
+a{
+    color:#2f0505
+}
+
+
  .website-menu-links {
-    border-right: 5px red solid;
-    border-left: 5px red solid;
-    border-bottom: 5px red solid;
     text-align: center;
     background-color: #fff9ee;
     color: #2f0505;
@@ -57,52 +63,60 @@ header {
 
  
  .block {
-    float:left;
+    float: left;
     width:50%;
     padding: 1rem;
     box-sizing: border-box;
-    border-right: 5px red solid;
-    border-left: 5px red solid;
-    border-top: 5px red solid;
-    border-bottom: 5px red solid;  
+     
  }
 
  .menu-and-order{
     width: 50%;
     box-sizing: border-box;
     padding-left: 10px;
-    border-right: 5px red solid;
-    border-left: 5px red solid;
-    border-top: 5px red solid;
-    border-bottom: 5px red solid;
+    /* border-right: 5px red solid; */
+    /* border-left: 5px red solid; */
+    /* border-top: 5px red solid; */
+    /* border-bottom: 5px red solid; */
+ }
+
+ .menu1 {
+    float:left;
+    /* margin-left: 10rem; */
+ }
+
+ .menu2 {
+    float: right;
+    /* margin-right: 10rem; */
  }
 
  .dishes {
-    border-right: 5px red solid;
-    border-left: 5px red solid;
-    border-top: 5px red solid;
-    border-bottom: 5px red solid;
+    /* border-right: 5px red solid; */
+    /* border-left: 5px red solid; */
+    /* border-top: 5px red solid; */
+    /* border-bottom: 5px red solid; */
     padding-top: 10rem;
  }
 
 .popular-dishes {
-    border-right: 5px red solid;
-    border-left: 5px red solid;
-    border-top: 5px red solid;
-    border-bottom: 5px red solid;
+    /* border-right: 5px red solid; */
+    /* border-left: 5px red solid; */
+    /* border-top: 5px red solid; */
+    /* border-bottom: 5px red solid; */
     box-sizing: border-box;
 }
 
 .check-it-out {
-    border-right: 5px red solid;
-    border-left: 5px red solid;
-    border-top: 5px #ffe7ae solid;
-    padding-top: 10px;
+    /* border-right: 5px red solid; */
+    /* border-left: 5px red solid; */
+    /* border-top: 5px #ffe7ae solid; */
+    /* padding-top: 10px; */
     padding-bottom: 8px;
     margin-left: 30px;
 }
 
 footer {
+    float: left;
     background-color: #2f0505;
     text-align: center;
     border: 8px;
@@ -113,6 +127,15 @@ footer {
     box-sizing: border-box;
     border-top: #ffe7ae;
     border-width: 5px;
+ }
+
+ .fótur1 {
+    float: left;
+    margin-left: 25rem;
+ }
+ .fótur2 {
+    float: right;
+    margin-right: 25rem;
  }
 
 
