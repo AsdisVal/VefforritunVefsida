@@ -7,6 +7,10 @@
   /* Reiknum stærð á öllum boxum sem border-box */
   html {
     box-sizing: border-box;
+    font-size: 16px;
+    border-spacing: 0;
+    list-style: none;
+
   }
   /* og látum erfast á allt */
   *,
@@ -33,36 +37,88 @@
     src: url(https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap) format('serif');
   }
 
- /* p {
-    font-family: Lora;
-    font-style: normal;
-    font-weight: 400;
-  }*/
 
-  footer {
+header {
+    border-bottom: 5px #ffe7ae solid;
+    text-align: center;
+    background-color: #2f0505;
+    color: #fff1cf;
+}
+
+ .website-menu-links {
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-bottom: 5px red solid;
+    text-align: center;
+    background-color: #fff9ee;
+    color: #2f0505;
+    padding:1rem;
+ }
+
+ 
+ .block {
+    float:left;
+    width:50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;  
+ }
+
+ .menu-and-order{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+ }
+
+ .dishes {
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    padding-top: 10rem;
+ }
+
+.popular-dishes {
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    box-sizing: border-box;
+}
+
+.check-it-out {
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px #ffe7ae solid;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin-left: 30px;
+}
+
+footer {
     background-color: #2f0505;
     text-align: center;
     border: 8px;
     border-color: #ffe7ae;
     color:#fff1cf;
-   /* font-family: 'Lora';    
-    font-style: normal;
-    font-weight: 400; */
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: #ffe7ae;
+    border-width: 5px;
  }
 
- .restaurant-intro {
-    text-align: center;
-    background-color: #2f0505;
-    color: #fff1cf;
-    /*border-width: 8px;
-    border-bottom-color: #ffe7ae;*/
- }
 
- .website-menu-links {
-    text-align: center;
-    background-color: #fff9ee;
-    color: #2f0505;
- }
+
+
+
 
  
 
