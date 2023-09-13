@@ -1,11 +1,12 @@
+/* ALMENNT */
+
 /* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Lora', serif;
     font-style: normal;
-    font-size: 1rem;
-    /* max-width: 900px; */
+   
 }
   
   /* Reiknum stærð á öllum boxum sem border-box */
@@ -14,7 +15,6 @@
     font-size: 16px;
     border-spacing: 0;
     list-style: none;
-
   }
   /* og látum erfast á allt */
   *,
@@ -22,6 +22,7 @@
   *:after {
     box-sizing: inherit;
   }
+
   
   /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
   .sr-only:not(:focus):not(:active) {
@@ -34,13 +35,7 @@
     width: 1px;
   }
 
-  @font-face {
-    font-family: 'Lora';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap) format('serif');
-  }
-
+  /* ALMENNT*/
 
 header {
     text-align: center;
@@ -52,73 +47,57 @@ header {
     border-bottom: 0.5rem #ffe7ae solid;
 }
 
-a{ 
-    color:#2f0505 
-} 
+main {
+   padding: 1rem;
+   margin: 0 auto;
+   width: 100%;
+   max-width: fit-content;
+}
 
-  nav { 
-    padding:1rem;
-    background-color: #fff9ee;
-    color: #2f0505;
-    
- }
+/*Litur fyrir línka*/
+main a{color: #2f0505;}
+nav a{color: #2f0505;}
+footer a{color: #fff1cf;}
 
- nav ul{
-    text-align: center;
- }
+/* útlit fyrir menu navigation*/
+nav { 
+   padding:1rem;
+   background-color: #fff9ee;
+   color: #2f0505; 
+  }
+nav ul{text-align: center;}
+nav ul li{
+   display: inline;
+   padding-right: 1rem;
+   font-weight: 400;
+}
+nav ul li:last-child {padding-right: 0;}
 
- nav ul li{
-    display: inline;
-    padding-right: 1rem;
- }
-
-
- nav ul li:last-child {
-    padding-right: 0;
- }
-
- main {
-    padding: 1rem;
-    margin: 0 auto;
-    width: 100%;
-    max-width: fit-content;
- }
-
- main div.popular-dishes dl {
-    display: inline;
- }
-
-
- .block{
-   display: block;
+/*FORSÍÐA*/
+/* Utanumhald fyrir box í forsíðunni */
+.box{
    display: inline-block;
+   width: 40%;
+   vertical-align: top;
+   text-align: left;
+   padding: 15px;
  }
 
+.boxes{border-bottom: 2px solid #ffe7ae;}
 
- .website-menu-links {
-    text-align: center;
-    background-color: #fff9ee;
-    color: #2f0505;
-    padding:1rem;
- }
-
- 
-
- div{
+.ein-mynd{
    display: inline-block;
- }
- 
- 
- .block {
-    display: inline-block;
-    margin: 1rem;
-    width:50%;
-    padding: 1rem;
-    box-sizing: border-box;
-    text-align: center;
-    vertical-align: top;
-     
- }
+   width: 40%;
+   vertical-align: top;
+   padding: 15px;
+   
+}
+#stronger{font-weight: 700;}
+
+   /* Lagfæringar fyrir lista í vinsælum rétturm*/
+ul{list-style: none;}
+dt {font-weight: 700;}
+
 
  .allt-f-ofan {
     border-bottom: 0.5rem #ffe7ae solid;
@@ -150,6 +129,22 @@ a{
     margin-left: 30px;
 }
 
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+          
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+          
+        tbody tr:nth-child(odd) {
+            background-color: #ffe7ae;
+        }
+    
+
 footer {
     background-color: #2f0505;
     text-align: center;
@@ -162,8 +157,9 @@ footer {
     border-top: 0.5rem #ffe7ae solid;
     border-width: 5px;
     margin-bottom: 1rem;
-
  }
+
+ 
 
 footer .content {
     margin: 0 auto;
@@ -181,6 +177,79 @@ footer .content .box {
 
 
 
+.fótur1{
+   display: inline-block;
+   width: 48%;
+   vertical-align:top;
+   text-align: center;
+   padding: 25px;
+   
+}
+
+.fótur2{
+   display: inline-block;
+   width: 48%;
+   vertical-align: top;
+   text-align: center;
+   padding: 25px;
+}
+
+
+legend {
+   font-weight:700;
+}
+/* Um Veitingastaðinn */
+#ein-mynd
+
+/* PÖNTUN */
+
+
+.form-container{
+   display: inline-block;
+}
+
+.form-container{
+   /*width: 1000px;*/
+   display: block;
+   width: 100%;
+   box-sizing: content-box;
+}
+
+fieldset{
+   border-color: #ffe7ae;
+   width: 45%;
+   display: inline-block;
+   vertical-align: top; 
+   padding: 1rem;
+   margin: 0.4rem;
+}
+#fieldset-items-wrapper{
+   display:block;
+}
+#when-wrapper{
+   display: block;
+}
+
+#when {
+   display: block;
+}
+
+#food1{
+   display: block;
+}
+
+#food2{
+   display: block;
+}
+#food3{
+   display: block;
+}
+#food4{
+   display: block;
+}
+#food5{
+   display: block;
+}
 
 
 

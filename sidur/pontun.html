@@ -8,13 +8,19 @@
     <meta property="og:image" content="/myndir/sharing.jpg">
     <meta property="og:title" content="Panta">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
         <header>
             <h1>Pantanir</h1>
+            <p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
         </header>
-        <p>Pantaðu borð og mættu til okkar eða pantaðu mat sem við sendum þér eða þú sækir.</p>
+
+        <p><a href="#efni"><div class="sr-only">Beint í efni</div></a></p>
+
         
         <nav>
             <ul>
@@ -24,118 +30,110 @@
               <li><strong>Pöntunarsíða</strong></li>
             </ul>
         </nav>
-        <form>
-            <fieldset>
-                <legend>Panta borð</legend>
-                <div>
-                    <label for="time">Hvenær viltu koma?</label>
-                    <div>
-                        <input type="datetime-local" id="time">
-                    </div>
-                </div>
-                <div>
-                    <label for="number">Hve mörg?</label>
-                    <div>
-                    <select id="number" name="number">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                      </select>
-                    </div>
-                </div>
-                <div>
-                    <label for="comment">Viltu taka eitthvað fram?</label>
-                    <div>
-                        <textarea name="comment" id="comment"></textarea>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-    
-        <form>
-            <fieldset>
-                <legend>Panta mat</legend>
-                <div>
-                    <label for="order1">Réttur #1</label>
-                    <div>
-                        <input name="order1" type="text" id="order1">
-                    </div>
-                </div>
-                <div>
-                    <label for="order2">Réttur #2</label>
-                    <div>
-                        <input name="order2" type="text" id="order2">
-                    </div>
-                    
-                </div>
-                <div>
-                    <label for="order3">Réttur #3</label>
-                    <div>
-                        <input name="order3" type="text" id="order3">
-                    </div>
-                </div>
-                <div>
-                    <label for="order4">Réttur #4</label>
-                    <div>
-                        <input name="order4" type="text" id="order4">
-                    </div>
-                </div>
-                <div>
-                    <label for="order5">Réttur #5</label>
-                    <div>
-                        <input name="order5" type="text" id="order5">
-                    </div>
-                </div>
-                <div>
-                    <label for="mail">Heimilisfang </label>
-                    <div>
-                        <input name="mail" type="email" id="mail">
-                    </div>
-                </div>
-            </fieldset>
-        </form>
-     
-        <fieldset>
-            <legend>Þínar upplýsingar</legend>
-            <div>
-                <label>Nafn:</label>
-                <input type="text" id="name" required>  
-            </div>
-            <div>
-                <label for="email">Netfang:</label>
-                <input type="text" id="email" placeholder="xxx@gmail.com" required>
-            </div>
-            <div>
-                <label for="phone">Sími:</label>
-                <input type="text" id="phone" placeholder="000-0000" required>
-            </div>
-        </fieldset>
 
-        <form>
-            <fieldset>
-                <legend>Samþykkja og panta</legend>
-                <div>
+        <main id="efni">
+            <form method="post" action="." class="form-container">
+                <fieldset>
+                    <legend>Panta borð</legend>
+                    <div id="fieldset-items-wrapper">
+                  <div id="when-wrapper">
+                    <label for="when">Hvenær viltu koma?</label>
+                        <input type="datetime-local" id="when" name="when">
+                  </div>
+                  <div>
+                    <label for="size">Hve mörg?</label>
+                    <select id="size">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="special">Viltu taka eitthvað fram?</label>
+                    <textarea id="special"></textarea>
+                  </div>
+                </div>
+                </fieldset>
+                <fieldset>  
+                    <legend>Panta mat</legend>
+                <div id="fieldset-items-wrapper">
+                  <div>
+                    <label for="food1">Réttur #1</label>
+                    <input id="food1" list="foods">
+                  </div>
+                  <div>
+                    <label for="food2">Réttur #2</label>
+                    <input id="food2" list="foods">
+                  </div>
+                  <div>
+                    <label for="food3">Réttur #3</label>
+                    <input id="food3" list="foods">
+                  </div>
+                  <div>
+                    <label for="food4">Réttur #4</label>
+                    <input id="food4" list="foods">
+                  </div>
+                  <div>
+                    <label for="food5">Réttur #5</label>
+                    <input id="food5" list="foods">
+                  </div>
+                  <div>
+                    <label for="address">Heimilisfang</label>
+                    <input type="text" id="address">
+                  </div>
+                </div>
+                </fieldset>
+          
+                <fieldset>
+                  <legend>Þínar upplýsingar</legend>
+                  <div>
+                    <label for="name">Nafn</label>
+                    <input id="name" type="text" required>
+                  </div>
+                  <div>
+                    <label for="email">Netfang</label>
+                    <input id="email" name="email" type="email" required placeholder="nafn@example.org">
+                  </div>
+                  <div>
+                    <label for="phone">Sími</label>
+                    <input id="phone" type="tel" required placeholder="345-6789">
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Samþykkja og panta</legend>
+                  <div>
                     <label>
-                      <input name="Agreement" type="checkbox">
-                      Ég samþykki skilmála Veitingastaðsins
-                    </label>
+                      <input type="checkbox" name="terms">Ég samþykki skilmála
+                      Veitingastaðsins</label>
                   </div>
                   <button>Panta</button>
-            </fieldset>
-        </form>        
-    <nav><a href="../index.html">Aftur á forsíðu</a></nav>
+                </fieldset>
+                <datalist id="foods">
+                  <option>Lasagna</option>
+                  <option>Sveppa risotto</option>
+                  <option>Ferskt pasta</option>
+                  <option>Quesadilla</option>
+                  <option>Falafel með</option>
+                  <option>Súpa dagsins</option>
+                  <option>Kryddaðar sætkartöflur</option>
+                  <option>Hamborgari</option>
+                  <option>Pizza</option>
+                </datalist>
+              </form>  
+            <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+        </main>    
     
     <footer>
         <h2>Opnunartími</h2>
         <dl>
-            <dt>Mánudaga til fimmtudaga</dt>
+            <dt><h4>Mánudaga til fimmtudaga</h3></dt>
             <dd>09:00–18:00</dd>
     
             <dt>Föstudaga</dt>
@@ -149,11 +147,15 @@
         </dl>   
         
         <h2>Hér erum við</h2>
-        <p>Veitingastaðurinn ehf.</p>
-        <p>Aðalgata 10</p>
-        <p>100 Reykjavík</p>
-        <p>Sími 333-4567</p>
-        <nav><a href="">veitingastadur@example.org</a></nav>
+        <ul>
+          <li>Veitingastaðurinn ehf.</li>
+          <li>Aðalgata 10</li>
+          <li>100 Reykjavík</li>
+          <li><a href="tel:3334567">Sími 333-4567</a></li>
+          <li>
+            <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+          </li>
+        </ul>    
     </footer>
     
 </body>
