@@ -8,122 +8,134 @@
     <meta property="og:title" content="Matseðill">
     <title>Matseðill</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+          
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+          
+        tr:nth-child(even) {
+            background-color: #ffe7ae;
+        }
+    </style>
 </head>
 
 <body>
-    <section class="matsedill-inngangur">
+    <header>
         <h1>Matseðill</h1>
         <p>Skoðaðu það sem við höfum upp á að bjóða!</p>
-    </section>
-    <p>Hér er valmynd sem vísar á hinar síðurnar:</p>
-        <ul>
-            <li><a href="../index.html">Forsíða</a>
-            <li><a href="../sidur/um.html">Um okkur</a>
-            <li><a href="../sidur/pontun.html">Panta</a>            
-        </ul>
+    </header>
 
+    <nav>
+      <ul>
+        <li><a href="../index.html">Forsíða</a></li>
+        <li><a href="./um.html">Um Veitingastaðinn</a></li>
+        <li><strong>Matseðill</strong></li>
+        <li><a href="./pontun.html">Pöntunarsíða</a></li>
+      </ul>
+    </nav>
+
+    <main id="efni">
         <table>
-            <caption>Matseðill fyrir Veitingastaðinn.</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Númer</th>
-                    <th scope="col">Titill réttar</th>
-                    <th scope="col">Lýsing</th>
-                    <th scope="col">Verð</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <th scope="row">Lasagna</th>
-                    <td>Lasagna með fersku salati</td>
-                    <td>2.500 kr.-</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <th scope="row">Sveppa risotto</th>
-                    <td>Kremkennt risotto með sveppum og fersku grænmeti</td>
-                    <td>2.500 kr.-</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <th scope="row">Ferskt pasta með pestó</th>
-                    <td>Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum</td>
-                    <td>2.300 kr.-</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    
-                    <th scope="row">Quesadilla</th>
-                    <td>Quesadilla með osti og fersku salsa</td>
-                    <td>2.100 kr.-</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    
-                    <th scope="row">Falafel með hummus</th>
-                    <td>Falafel með hummus","Falafel með hummus, pitu og fersku salati</td>
-                    <td>2.000 kr.-</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    
-                    <th scope="row">Súpa dagsins</th>
-                    <td>Daglega ný súpa</td>
-                    <td>1.850 kr.-</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    
-                    <th scope="row">Kryddaðar sætkartöflur</th>
-                    <td>Kryddaðar sætkartöflur með vorlauk</td>
-                    <td>1.100 kr.-</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    
-                    <th scope="row">Hamborgari</th>
-                    <td>Hamborgari með frönskum kartöflum</td>
-                    <td>2.500 kr.-</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    
-                    <th scope="row">Pizza</th>
-                    <td>Klassísk pizza</td>
-                    <td>2.000 kr.-</td>
-                </tr>
-            </tbody>
-                
-
-            
+          <thead>
+            <tr>
+              <th>Nr.</th>
+              <th>Heiti</th>
+              <th>Lýsing</th>
+              <th>Verð</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Lasagna</td>
+              <td>Lasagna með fersku salati</td>
+              <td>2.500 kr.-</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Sveppa risotto</td>
+              <td>Kremkennt risotto með sveppum og fersku grænmeti</td>
+              <td>2.500 kr.-</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ferskt pasta með pestó</td>
+              <td>
+                Pestó útbúið á staðnum með fersku pasta og ristuðum hnetum
+              </td>
+              <td>2.300 kr.-</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Quesadilla</td>
+              <td>Quesadilla með osti og fersku salsa</td>
+              <td>2.100 kr.-</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Falafel með hummus</td>
+              <td>Falafel með hummus, pitu og fersku salati</td>
+              <td>2.000 kr.-</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Súpa dagsins</td>
+              <td>Daglega ný súpa</td>
+              <td>1.850 kr.-</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Kryddaðar sætkartöflur</td>
+              <td>Kryddaðar sætkartöflur með vorlauk</td>
+              <td>1.100 kr.-</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Hamborgari</td>
+              <td>Hamborgari með frönskum kartöflum</td>
+              <td>2.500 kr.-</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Pizza</td>
+              <td>Klassísk pizza</td>
+              <td>2.000 kr.-</td>
+            </tr>
+          </tbody>
         </table>
-
-    <nav><a href="../index.html">Aftur á forsíðu</a></nav>
-
+    
+        <p><a href="../index.html">Aftur á forsíðu</a>.</p>
+      </main>
+    
     <footer>
         <h2>Opnunartími</h2>
         <dl>
             <dt>Mánudaga til fimmtudaga</dt>
             <dd>09:00–18:00</dd>
-    
             <dt>Föstudaga</dt>
             <dd>10:00–22:00</dd>
-    
             <dt>Laugardaga</dt>
             <dd>11:00–22:00</dd>
-    
             <dt>Sunnudaga</dt>
             <dd>Lokað</dd>
         </dl>   
         
         <h2>Hér erum við</h2>
-        <p>Veitingastaðurinn ehf.</p>
-        <p>Aðalgata 10</p>
-        <p>100 Reykjavík</p>
-        <p>Sími 333-4567</p>
-        <nav><a href="">veitingastadur@example.org</a></nav>
+        <ul>
+            <li>Veitingastaðurinn ehf.</li>
+            <li>Aðalgata 10</li>
+            <li>100 Reykjavík</li>
+            <li><a href="tel:3334567">Sími 333-4567</a></li>
+            <li>
+              <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+            </li>
+        </ul>
     </footer>
-    
 </body>
 </html>

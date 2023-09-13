@@ -88,6 +88,12 @@ a{
     display: inline;
  }
 
+ 
+ .block{
+   display: block;
+   display: inline-block;
+ }
+
 
  .website-menu-links {
     text-align: center;
@@ -97,16 +103,21 @@ a{
     /* display: inline; */
  }
 
- .pop-dish {
-    border-bottom: 0.5rem #ffe7ae solid;
- }
+ 
 
+ div{
+   display: inline-block;
+ }
+ 
  
  .block {
-    float: left;
+    display: inline-block;
+    margin: 1rem;
     width:50%;
     padding: 1rem;
     box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
      
  }
 
@@ -122,9 +133,17 @@ a{
     
  }
 
+ .pop-dish {
+   border-bottom: 0.5rem #ffe7ae solid;
+   display: inline-block;
+}
 
 .popular-dishes {
     box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    
 }
 
 .check-it-out {
