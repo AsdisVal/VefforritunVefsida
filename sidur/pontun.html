@@ -34,13 +34,13 @@
         <main id="efni">
             <form method="post" action="." class="form-container">
                 <fieldset>
-                    <legend>Panta borð</legend>
+                    <legend><h3>Panta borð</h3></legend>
                     <div id="fieldset-items-wrapper">
                   <div id="when-wrapper">
                     <label for="when">Hvenær viltu koma?</label>
                         <input type="datetime-local" id="when" name="when">
                   </div>
-                  <div>
+                  <div id="when-wrapper">
                     <label for="size">Hve mörg?</label>
                     <select id="size">
                       <option>1</option>
@@ -55,44 +55,44 @@
                       <option>10</option>
                     </select>
                   </div>
-                  <div>
+                  <div id="when-wrapper">
                     <label for="special">Viltu taka eitthvað fram?</label>
-                    <textarea id="special"></textarea>
+                        <textarea id="special"></textarea>
                   </div>
                 </div>
                 </fieldset>
                 <fieldset>  
-                    <legend>Panta mat</legend>
+                    <legend><h3>Panta mat</h3></legend>
                 <div id="fieldset-items-wrapper">
-                  <div>
+                  <div id="food-wrapper">
                     <label for="food1">Réttur #1</label>
                     <input id="food1" list="foods">
                   </div>
-                  <div>
+                  <div id="food-wrapper">
                     <label for="food2">Réttur #2</label>
                     <input id="food2" list="foods">
                   </div>
-                  <div>
+                  <div id="food-wrapper">
                     <label for="food3">Réttur #3</label>
                     <input id="food3" list="foods">
                   </div>
-                  <div>
+                  <div id="food-wrapper">
                     <label for="food4">Réttur #4</label>
                     <input id="food4" list="foods">
                   </div>
-                  <div>
+                  <div id="food-wrapper">
                     <label for="food5">Réttur #5</label>
                     <input id="food5" list="foods">
                   </div>
-                  <div>
+                  <div id="food-wrapper">
                     <label for="address">Heimilisfang</label>
-                    <input type="text" id="address">
+                        <input type="text" id="address">
                   </div>
                 </div>
                 </fieldset>
           
                 <fieldset>
-                  <legend>Þínar upplýsingar</legend>
+                  <legend><h3>Þínar upplýsingar</h3></legend>
                   <div>
                     <label for="name">Nafn</label>
                     <input id="name" type="text" required>
@@ -107,13 +107,13 @@
                   </div>
                 </fieldset>
                 <fieldset>
-                  <legend>Samþykkja og panta</legend>
+                  <legend><h3>Samþykkja og panta</h3></legend>
                   <div>
                     <label>
-                      <input type="checkbox" name="terms">Ég samþykki skilmála
+                      <input id="skilmálar" type="checkbox" name="terms">Ég samþykki skilmála
                       Veitingastaðsins</label>
                   </div>
-                  <button>Panta</button>
+                  <button class="order-takki">Panta</button>
                 </fieldset>
                 <datalist id="foods">
                   <option>Lasagna</option>

@@ -73,6 +73,10 @@ nav ul li{
 }
 nav ul li:last-child {padding-right: 0;}
 
+#haus-mat{
+   font-weight: 700;
+}
+
 /*FORSÍÐA*/
 /* Utanumhald fyrir box í forsíðunni */
 .box{
@@ -85,19 +89,10 @@ nav ul li:last-child {padding-right: 0;}
 
 .boxes{border-bottom: 2px solid #ffe7ae;}
 
-.ein-mynd{
-   display: inline-block;
-   width: 40%;
-   vertical-align: top;
-   padding: 15px;
-   
-}
-#stronger{font-weight: 700;}
 
+#stronger{font-weight: 700;}
    /* Lagfæringar fyrir lista í vinsælum rétturm*/
 ul{list-style: none;}
-dt {font-weight: 700;}
-
 
  .allt-f-ofan {
     border-bottom: 0.5rem #ffe7ae solid;
@@ -135,9 +130,14 @@ dt {font-weight: 700;}
             width: 100%;
         }
           
-        th, td {
+         td {
             text-align: left;
+            font-weight: 400;
             padding: 8px;
+        }
+        th {
+         text-align: center;
+         padding: 8px;
         }
           
         tbody tr:nth-child(odd) {
@@ -149,14 +149,13 @@ footer {
     background-color: #2f0505;
     text-align: center;
     border: 8px;
-    border-color: #ffe7ae;
     color:#fff1cf;
     float: left; 
     width: 100%;
     box-sizing: border-box;
     border-top: 0.5rem #ffe7ae solid;
-    border-width: 5px;
     margin-bottom: 1rem;
+    padding: 1rem;
  }
 
  
@@ -177,13 +176,17 @@ footer .content .box {
 
 
 
+
+
+
+
 .fótur1{
    display: inline-block;
-   width: 48%;
+   width: 30%;
    vertical-align:top;
    text-align: center;
    padding: 25px;
-   
+
 }
 
 .fótur2{
@@ -194,18 +197,39 @@ footer .content .box {
    padding: 25px;
 }
 
+/* MATSEÐILL */
+#efni{
+   font-weight: 700;
+   padding: 2rem;
+   margin:auto; 
+}
 
 legend {
    font-weight:700;
 }
 /* Um Veitingastaðinn */
-#ein-mynd
+
+.ein-mynd{
+   display: inline-block;
+   width: 40%;
+   vertical-align: top;
+   padding: 15px;
+   
+}
+
 
 /* PÖNTUN */
 
+#when-wrapper{
+   padding: 1rem;
+}
+
+#food-wrapper{
+   padding: 0.5rem;
+}
 
 .form-container{
-   display: inline-block;
+   display: block;
 }
 
 .form-container{
@@ -217,12 +241,25 @@ legend {
 
 fieldset{
    border-color: #ffe7ae;
-   width: 45%;
+   width: 30%;
    display: inline-block;
    vertical-align: top; 
    padding: 1rem;
    margin: 0.4rem;
 }
+#special{
+   display: block;
+}
+#address{
+   display: block;
+}
+#size{
+   display: block;
+   padding: 0.5rem;
+   background-color: lightgray;
+   border-radius: 5px;
+}
+
 #fieldset-items-wrapper{
    display:block;
 }
@@ -231,6 +268,16 @@ fieldset{
 }
 
 #when {
+   display: block;
+}
+
+#name{
+   display: block;
+}
+#email{
+   display: block;
+}
+#phone{
    display: block;
 }
 
@@ -250,6 +297,26 @@ fieldset{
 #food5{
    display: block;
 }
+
+.order-takki{
+   background-color:gainsboro;
+   text-align: center;
+   padding: 0.15rem;
+   margin-top: 1rem;
+   border-radius: 5px;
+}
+
+form input{
+   padding: 0.5rem;
+   width: 60%;
+   margin-bottom: 0.5rem;
+}
+
+#skilmálar{
+   margin-right: 0.5rem;
+   width: auto;
+}
+
 
 
 
