@@ -87,7 +87,10 @@ nav ul li:last-child {padding-right: 0;}
    padding: 15px;
  }
 
-.boxes{border-bottom: 2px solid #ffe7ae;}
+.boxes{
+   border-bottom: 2px solid #ffe7ae;
+   padding-top: 1rem;
+}
 
 
 #stronger{font-weight: 700;}
@@ -158,47 +161,40 @@ footer {
     padding: 1rem;
  }
 
+ .title-open{
+   padding-top: 1rem;
+   font-weight:700;
+ }
+
+ .title-link{
+   padding-top: 1rem;
+   font-weight: 700;
+ }
+
+ .title-about{
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+ }
+ .about-fun-ppl{
+   padding-bottom: 1rem;
+   padding-top: 1rem;
+ }
+
+ .adal-fotur{
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1000px;
+ }
  
-
-footer .content {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1000px;
-
-}
-
-footer .content .box {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    text-align: center;
-}
-
-
-
-
-
-
-
-.fótur1{
+ .fótur{
    display: inline-block;
    width: 30%;
-   vertical-align:top;
-   text-align: center;
-   padding: 25px;
-
-}
-
-.fótur2{
-   display: inline-block;
-   width: 48%;
    vertical-align: top;
    text-align: center;
-   padding: 25px;
-}
+ }
 
 /* MATSEÐILL */
-#efni{
+#efni-matsedill{
    font-weight: 700;
    padding: 2rem;
    margin:auto; 
@@ -215,6 +211,10 @@ legend {
    vertical-align: top;
    padding: 15px;
    
+}
+#efni-um{
+   width: 70%;
+
 }
 
 
