@@ -209,14 +209,11 @@ legend {
 
 .ein-mynd{
    display: inline-block;
-   width: 40%;
    vertical-align: top;
    padding: 15px;
    
 }
-.allar-myndir{
 
-}
 
 #efni-um{
    width: 70%;
@@ -227,27 +224,35 @@ legend {
 
 /* PÖNTUN */
 
-#when-wrapper{
+#efni-pontun{
+   margin-bottom: 1rem;
+   /*margin-left: rem;*/
+   margin-left: 20rem;
+   /* border-bottom: #ffe7ae solid 2px; */
+}
+
+
+.when-wrapper{
    padding: 1rem;
 }
 
-#food-wrapper{
+.food-wrapper{
    padding: 0.5rem;
 }
 
 .form-container{
    display: block;
-}
-
-.form-container{
-   /*width: 1000px;*/
-   display: block;
+   border-bottom:#ffe7ae solid 2px;
+   margin-bottom: 1rem;
+   padding-bottom: 1rem;
    width: 100%;
    box-sizing: content-box;
 }
 
+
 fieldset{
-   border-color: #ffe7ae;
+  /* border-color: #ffe7ae;*/
+   border: 0.1rem #ffe7ae solid;
    width: 30%;
    display: inline-block;
    vertical-align: top; 
@@ -311,7 +316,13 @@ fieldset{
    padding: 0.15rem;
    margin-top: 1rem;
    border-radius: 5px;
+   border-top: lightgray solid 2px;
+   border-left: lightgray solid 2px;
+   border-right: gray solid 2px;
+   border-bottom: gray solid 2px;
+
 }
+
 
 form input{
    padding: 0.5rem;
