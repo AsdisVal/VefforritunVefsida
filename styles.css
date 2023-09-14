@@ -85,6 +85,8 @@ nav ul li:last-child {padding-right: 0;}
    vertical-align: top;
    text-align: left;
    padding: 15px;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
  }
 
 .boxes{
@@ -212,10 +214,15 @@ legend {
    padding: 15px;
    
 }
+.allar-myndir{
+
+}
+
 #efni-um{
    width: 70%;
 
 }
+
 
 
 /* PÖNTUN */
