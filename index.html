@@ -1,158 +1,132 @@
 <!DOCTYPE html>
 <html lang="is">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Spurning fyrir dæmatíma: lýsigögn(Allar síður skulu hafa lýsigögn. Í kafla 4 er talað um lýsigögn btw) Auk þess hvað er átt við beint í efni hlekk? Og hvernig á að skipta um lit þegar búið er að smella á hlekk?-->
-    <meta property="og:description" content="Þetta er forsíða fyrir verkefni 2 fyrir vefforritun í viku 2.">
-    <meta property="og:title" content="Verkefni 2">
-    <meta property="og:image" content="/myndir/sharing.jpg">
-    <title>Forsíða</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Veitingastaðurinn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="description" content="Forsíða Veitingastaðsins, veitingastaður með allar þær veitingar sem þig vantar.">
+  <meta property="og:title" content="Veitingastaðurinn">
+  <meta property="og:description" content="Velkomin á Veitingastaðinn!">
+  <meta property="og:image" content="./myndir/sharing.jpg">
 </head>
 
 <body>
-    <header>
-        <h1>Veitingastaðurinn</h1>
-        <p>Á Veitingastaðnum hugsum við vel um þig og gefum þér gott að borða.</p>  
-    </header>
+  <header>
+    <h1>Veitingastaðurinn</h1>
+    <p>Á Veitingastaðnum hugsum við vel um þig og gefum þér gott að borða.</p>
+  </header>
 
+  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
 
-    <nav> 
-        <ul>
-            <li><strong>Forsíða</strong></li>
-            <li><a href="../sidur/um.html">Um veitingastaðinn</a>
-            </li>
-            <li><a href="../sidur/matsedill.html">Matseðill</a></li>
-            <li><a href="../sidur/pontun.html">Panta</a></li>
-        </ul>
-    </nav>
-    
-    <main id="efni">
-        
-            <div class="boxes">
-                <div class="box">
-                    <section>
-                    <h3>Opnunartími</h3>
-                     <dl>
-                        <dt class="title-open">Mánudaga til fimmtudaga</dt>
-                        <dd>09:00–18:00</dd>
-                        <dt class="title-open">Föstudaga</dt>
-                        <dd>10:00–22:00</dd>
-                        <dt class="title-open">Laugardaga</dt>
-                        <dd>11:00–22:00</dd>
-                        <dt class="title-open">Sunnudaga</dt>
-                        <dd>Lokað</dd>
-                    </dl> 
-                    </section>           
-                </div>
-                <div class="box">
-                    <section>
-                        <h3>Um okkur</h3>
-                            <p class="about-fun-ppl">Við erum hresst fólk sem útbýr mat alla daga nema sunnudaga.</p>
-                            <a  href = "/sidur/um.html" class="title-link">Lesa meira um okkur</a>  
-                    </section>              
-                </div>
-                <div class="box">
-                    <section>             
-                        <h3>Matseðill</h3>
-                        <p class="about-fun-ppl">Skoðaðu matseðilinn okkar!</p>
-                        <a  href = "/sidur/matsedill.html" class="title-link">Skoða matseðilinn</a>
-                    </section>                
-                </div>
-                <div class="box">
-                    <section>
-                        <h3>Panta</h3>
-                        <p class="about-fun-ppl">Pantaðu borð eða mat heim til þín!</p>
-                        <a  href = "/sidur/pontun.html" class="title-link">Senda inn pöntun</a>
-                    </section>
-                </div>
-            </div>
+  <nav>
+    <ul>
+      <li><strong>Forsíða</strong></li>
+      <li><a href="sidur/um.html">Um Veitingastaðinn</a></li>
+      <li><a href="sidur/matsedill.html">Matseðill</a></li>
+      <li><a href="sidur/pontun.html">Pöntunarsíða</a></li>
+    </ul>
+  </nav>
 
-            <div class="boxes">
-                          
-                <h2>Vinsælir réttir</h2>
-                <div class="box">
-                    <ul>
-                        <li>
-                        <h3>Súpa dagsins</h3>
-                        <p>Daglega ný súpa</p>
-                        <p>2.100 kr.-</p>
-                        <a href="./sidur/pontun.html" class="title-link">Panta</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <ul>
-                        <li>
-                        <h3>Lasagna</h3>
-                        <p>Lasagna með fersku salati</p>
-                        <p>2.500 kr.-</p>
-                        <a href="./sidur/pontun.html" class="title-link">Panta</a>
-                      </li>
-                    </ul>
-                </div>
-            
-                <div class="box">
-                    <ul>
-                        <li>
-                        <h3>Pizza</h3>
-                        <p>Klassísk pizza</p>
-                        <p>2.000 kr.-</p>
-                        <a href="./sidur/pontun.html" class="title-link">Panta</a>
-                        </li>
-                    </ul>
-                </div>
-            
-                <div class="box">
-                    <ul>
-                        <li>
-                        <h3>Hamborgari</h3>
-                        <p>Hamborgari með frönskum kartöflum</p>
-                        <p>2.500 kr.-</p>
-                        <a href="./sidur/pontun.html" class="title-link">Panta</a>
-                        </li>
-                    </ul>
-                </div>
-            
-            </div>
-             <p><a href="./sidur/matsedill.html">Skoða matseðil</a> eða <a href="./sidur/panta.html">panta</a>.</p> 
-                
-              
-    </main>  
+  <main id="efni">
+    <div class="boxes">
+      <section class="box">
+        <h3>Opnunartími</h3>
+        <dl>
+          <dt>Mánudaga til fimmtudaga</dt>
+          <dd>09:00–18:00</dd>
+          <dt>Föstudaga</dt>
+          <dd>10:00–22:00</dd>
+          <dt>Laugardaga</dt>
+          <dd>11:00–22:00</dd>
+          <dt>Sunnudaga</dt>
+          <dd>Lokað</dd>
+        </dl>
+      </section>
 
-    <footer> 
-        <div class="adal-fotur">
-            <div class="fótur">
-                    <h2>Opnunartími</h2>
-                    <dl>
-                    <dt class="title-open">Mánudaga til fimmtudaga</dt>
-                    <dd>09:00–18:00</dd>
-                    <dt class="title-open">Föstudaga</dt>
-                    <dd>10:00–22:00</dd>
-                    <dt class="title-open">Laugardaga</dt>
-                    <dd>11:00–22:00</dd>
-                    <dt class="title-open">Sunnudaga</dt>
-                    <dd>Lokað</dd>
-                    </dl>
-            </div>
-            <div class="fótur">
-                
-                <h2>Hér erum við</h2>
-                <ul>
-                <li>Veitingastaðurinn ehf.</li>
-                <li>Aðalgata 10</li>
-                <li>100 Reykjavík</li>
-                <li><a href="tel:3334567">Sími 333-4567</a></li>
-                <li><a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a></li>
-                </ul>
-                
-            </div>
-        </div>
-    </footer>
+      <section class="box">
+        <h3>Um okkur</h3>
+        <p>Við erum hresst fólk sem útbýr mat alla daga nema sunnudaga.</p>
+        <a href="./sidur/um.html">Lesa meira um okkur</a>
+      </section>
+
+      <section class="box">
+        <h3>Matseðill</h3>
+        <p>Skoðaðu matseðilinn okkar!</p>
+        <a href="./sidur/matsedill.html">Skoða matseðilinn</a>
+      </section>
+
+      <section class="box">
+        <h3>Panta</h3>
+        <p>Pantaðu borð eða mat heim til þín!</p>
+        <a href="./sidur/pontun.html">Senda inn pöntun</a>
+      </section>
+    </div>
+
+    <section class="popular">
+      <h2>Vinsælir réttir</h2>
+
+      <ul class="boxes">
+        <li class="box">
+          <h3>Súpa dagsins</h3>
+          <p>Daglega ný súpa</p>
+          <p>2.100 kr.-</p>
+          <a href="./sidur/panta.html">Panta</a>
+        </li>
+        <li class="box">
+          <h3>Lasagna</h3>
+          <p>Lasagna með fersku salati</p>
+          <p>2.500 kr.-</p>
+          <a href="./sidur/panta.html">Panta</a>
+        </li>
+        <li class="box">
+          <h3>Pizza</h3>
+          <p>Klassísk pizza</p>
+          <p>2.000 kr.-</p>
+          <a href="./sidur/panta.html">Panta</a>
+        </li>
+        <li class="box">
+          <h3>Hamborgari</h3>
+          <p>Hamborgari með frönskum kartöflum</p>
+          <p>2.500 kr.-</p>
+          <a href="./sidur/panta.html">Panta</a>
+        </li>
+      </ul>
+      <p><a href="./sidur/matsedill.html">Skoða matseðil</a> eða <a href="./sidur/panta.html">panta</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Opnunartími</h2>
+      <dl>
+        <dt>Mánudaga til fimmtudaga</dt>
+        <dd>09:00–18:00</dd>
+        <dt>Föstudaga</dt>
+        <dd>10:00–22:00</dd>
+        <dt>Laugardaga</dt>
+        <dd>11:00–22:00</dd>
+        <dt>Sunnudaga</dt>
+        <dd>Lokað</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Hér erum við</h2>
+      <ul>
+        <li>Veitingastaðurinn ehf.</li>
+        <li>Aðalgata 10</li>
+        <li>100 Reykjavík</li>
+        <li><a href="tel:3334567">Sími 333-4567</a></li>
+        <li>
+          <a href="mailto:veitingastadur@example.org">veitingastadur@example.org</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
 </body>
 
 </html>

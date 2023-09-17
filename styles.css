@@ -1,339 +1,205 @@
-/* ALMENNT */
 
 /* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Lora', serif;
-    font-style: normal;
-   
-}
-  
-  /* Reiknum stærð á öllum boxum sem border-box */
-  html {
-    box-sizing: border-box;
-    font-size: 16px;
-    border-spacing: 0;
-    list-style: none;
-  }
-  /* og látum erfast á allt */
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
-  
-  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
-  .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-
-  /* ALMENNT*/
-
-header {
-    text-align: center;
-    background-color: #2f0505;
-    color: #fff1cf;
-    width: 100%; 
-    padding-bottom: 1rem;
-    border-top: 0.5rem #2f0505 solid;
-    border-bottom: 0.5rem #ffe7ae solid;
-}
-
-main {
-   padding: 1rem;
-   margin: 0 auto;
-   width: 100%;
-   max-width: fit-content;
-}
-
-/*Litur fyrir línka*/
-main a{color: #2f0505;}
-nav a{color: #2f0505;}
-footer a{color: #fff1cf;}
-
-/* útlit fyrir menu navigation*/
-nav { 
-   padding:1rem;
-   background-color: #fff9ee;
-   color: #2f0505; 
-  }
-nav ul{text-align: center;}
-nav ul li{
-   display: inline;
-   padding-right: 1rem;
-   font-weight: 400;
-}
-nav ul li:last-child {padding-right: 0;}
-
-#haus-mat{
-   font-weight: 700;
-}
-
-/*FORSÍÐA*/
-/* Utanumhald fyrir box í forsíðunni */
-.box{
-   display: inline-block;
-   width: 40%;
-   vertical-align: top;
-   text-align: left;
-   padding: 15px;
-   margin-top: 1rem;
-   margin-bottom: 1rem;
- }
-
-.boxes{
-   border-bottom: 2px solid #ffe7ae;
-   padding-top: 1rem;
-}
-
-
-#stronger{font-weight: 700;}
-   /* Lagfæringar fyrir lista í vinsælum rétturm*/
-ul{list-style: none;}
-
- .allt-f-ofan {
-    border-bottom: 0.5rem #ffe7ae solid;
- }
-
- .menu-and-order{
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: 10px;
-    
- }
-
- .pop-dish {
-   border-bottom: 0.5rem #ffe7ae solid;
-   display: inline-block;
-}
-
-.popular-dishes {
-    box-sizing: border-box;
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    
-}
-
-.check-it-out {
-     padding-bottom: 8px;
-    margin-left: 30px;
-}
-
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-          
-         td {
-            text-align: left;
-            font-weight: 400;
-            padding: 8px;
-        }
-        th {
-         text-align: center;
-         padding: 8px;
-        }
-          
-        tbody tr:nth-child(odd) {
-            background-color: #ffe7ae;
-        }
-    
-
-footer {
-    background-color: #2f0505;
-    text-align: center;
-    border: 8px;
-    color:#fff1cf;
-    float: left; 
-    width: 100%;
-    box-sizing: border-box;
-    border-top: 0.5rem #ffe7ae solid;
-    margin-bottom: 1rem;
-    padding: 1rem;
- }
-
- .title-open{
-   padding-top: 1rem;
-   font-weight:700;
- }
-
- .title-link{
-   padding-top: 1rem;
-   font-weight: 700;
- }
-
- .title-about{
-   padding-top: 1rem;
-   padding-bottom: 1rem;
- }
- .about-fun-ppl{
-   padding-bottom: 1rem;
-   padding-top: 1rem;
- }
-
- .adal-fotur{
-   margin: 0 auto;
-   width: 100%;
-   max-width: 1000px;
+   margin: 0;
+   padding: 0;
  }
  
- .fótur{
-   display: inline-block;
-   width: 30%;
-   vertical-align: top;
+ /* Reiknum stærð á öllum boxum sem border-box */
+ html {
+   box-sizing: border-box;
+ }
+ /* og látum erfast á allt */
+ *,
+ *:before,
+ *:after {
+   box-sizing: inherit;
+ }
+ 
+ /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+ .sr-only:not(:focus):not(:active) {
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+ }
+ 
+ /*** Almennt ***/
+ 
+ html,
+ input,
+ select,
+ button {
+   font-size: 16px;
+   font-family: 'Lora', serif;
+ }
+ 
+ a {
+   color: inherit;
+ }
+ 
+ h2,
+ h3,
+ section {
+   margin-bottom: 1rem;
+ }
+ 
+ img {
+   max-width: 100%;
+ }
+ 
+ /*** Haus ***/
+ 
+ body > header {
+   padding: 1rem;
+   border-bottom: 8px solid #ffe7ae;
+ 
+   background-color: #2f0505;
+   color: #fff1cf;
+ 
    text-align: center;
  }
-
-/* MATSEÐILL */
-#efni-matsedill{
-   font-weight: 700;
-   padding: 2rem;
-   margin:auto; 
-}
-
-legend {
-   font-weight:700;
-}
-/* Um Veitingastaðinn */
-
-.ein-mynd{
+ 
+ /*** Valmynd ***/
+ 
+ nav {
+   margin-bottom: 1rem;
+   padding: 1rem;
+ 
+   background-color: #fff9ee;
+   color: #2f0505;
+ }
+ 
+ nav ul {
+   list-style: none;
+   text-align: center;
+ }
+ 
+ nav ul li {
+   display: inline-block;
+   margin-right: 1rem;
+ }
+ 
+ /*** Meginmál ***/
+ 
+ main {
+   margin: 0 auto;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   max-width: 900px;
+ }
+ 
+ /*** Fótur ***/
+ 
+ footer {
+   margin-top: 1rem;
+   padding: 1rem;
+   border-top: 8px solid #ffe7ae;
+ 
+   background-color: #2f0505;
+   color: #fff1cf;
+ 
+   text-align: center;
+ }
+ 
+ footer > section {
    display: inline-block;
    vertical-align: top;
-   padding: 15px;
-   
-}
-
-
-#efni-um{
-   /* width: 70%; */
-}
-
-
-
-/* PÖNTUN */
-
-#efni-pontun{
-   margin-bottom: 1rem;
-   /*margin-left: rem;*/
-   margin-left: 20rem;
-   /* border-bottom: #ffe7ae solid 2px; */
-}
-
-
-.when-wrapper{
-   padding: 1rem;
-}
-
-.food-wrapper{
-   padding: 0.5rem;
-}
-
-.form-container{
-   display: block;
-   border-bottom:#ffe7ae solid 2px;
-   margin-bottom: 1rem;
-   padding-bottom: 1rem;
-   width: 100%;
-   box-sizing: content-box;
-}
-
-
-fieldset{
-  /* border-color: #ffe7ae;*/
-   border: 0.1rem #ffe7ae solid;
-   width: 30%;
-   display: inline-block;
-   vertical-align: top; 
-   padding: 1rem;
-   margin: 0.4rem;
-}
-#special{
-   display: block;
-}
-#address{
-   display: block;
-}
-#size{
-   display: block;
-   padding: 0.5rem;
-   background-color: lightgray;
-   border-radius: 5px;
-}
-
-#fieldset-items-wrapper{
-   display:block;
-}
-#when-wrapper{
-   display: block;
-}
-
-#when {
-   display: block;
-}
-
-#name{
-   display: block;
-}
-#email{
-   display: block;
-}
-#phone{
-   display: block;
-}
-
-#food1{
-   display: block;
-}
-
-#food2{
-   display: block;
-}
-#food3{
-   display: block;
-}
-#food4{
-   display: block;
-}
-#food5{
-   display: block;
-}
-
-.order-takki{
-   background-color:gainsboro;
+ }
+ 
+ footer ul {
+   list-style: none;
    text-align: center;
-   padding: 0.15rem;
+ }
+ 
+ /*** Box! ***/
+ 
+ .boxes {
+   margin-bottom: 2rem;
+   padding-bottom: 1rem;
+   border-bottom: 2px solid #ffe7ae;
+ }
+ 
+ .boxes .box {
+   display: inline-block;
+ 
+   margin-bottom: 1rem;
+   margin-right: 1%;
+   width: 48%;
+ 
+   vertical-align: top;
+ }
+ 
+ .boxes .box a {
+   display: block;
    margin-top: 1rem;
-   border-radius: 5px;
-   border-top: lightgray solid 2px;
-   border-left: lightgray solid 2px;
-   border-right: gray solid 2px;
-   border-bottom: gray solid 2px;
-
-}
-
-
-form input{
+   font-weight: bold;
+ }
+ 
+ /*** Opnunartími ***/
+ 
+ dt {
+   font-weight: bold;
+ }
+ 
+ dd {
+   margin-bottom: 1rem;
+ }
+ 
+ /*** Matseðill ***/
+ 
+ table {
+   margin-bottom: 1rem;
+   border-spacing: 0;
+ }
+ 
+ table th,
+ table td {
    padding: 0.5rem;
-   width: 60%;
-   margin-bottom: 0.5rem;
-}
-
-#skilmálar{
+ }
+ 
+ table tbody tr:nth-child(2n + 1) {
+   background-color: #ffe7ae;
+ }
+ 
+ /*** Pöntunarform ***/
+ 
+ fieldset {
+   margin-bottom: 1rem;
+   border: 1px solid #ffe7ae;
+   padding: 1rem;
+ }
+ 
+ fieldset legend {
+   font-weight: bold;
+ }
+ 
+ fieldset div {
+   margin-bottom: 1rem;
+ }
+ 
+ fieldset div label {
+   display: block;
+ }
+ 
+ fieldset input,
+ fieldset select,
+ fieldset textarea {
+   padding: 0.5rem;
+ }
+ 
+ fieldset input[type='checkbox'] {
+   display: inline-block;
    margin-right: 0.5rem;
-   width: auto;
-}
-
+ }
+ 
+ form button {
+   padding: 0.25rem;
+   border-radius: 6px;
+ }
 
 
 
