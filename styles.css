@@ -15,6 +15,9 @@
  *:after {
    box-sizing: inherit;
  }
+
+
+
  
  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
  .sr-only:not(:focus):not(:active) {
@@ -27,6 +30,7 @@
    width: 1px;
  }
  
+
  /*** Almennt ***/
  
  html,
@@ -47,29 +51,35 @@
    margin-bottom: 1rem;
  }
 
- h3{
-   /* text-decoration: underline; */
+ .wrapper{
+   display: flex;
+   flex-direction: column;
  }
  
  img {
    max-width: 100%;
+   object-fit: contain;
+   object-position: 50%  50%;
  }
  
  /*** Haus ***/
  
- body > header {
+ .header {
    padding: 1rem;
-   /* border-bottom: 8px solid #ffe7ae; */
  
    background-color: #2f0505;
    color: #fff1cf;
  
    text-align: center;
  }
+
+ .header > p {
+   padding-top: 1rem;
+ }
  
  /*** Valmynd ***/
  
- nav {
+ .nav {
    margin-bottom: 1rem;
    padding: 1rem;
    border-bottom: 8px solid #ffe7ae;
@@ -78,15 +88,16 @@
    color: #2f0505;
  }
  
- nav ul {
+ .nav ul {
    display: flex;
    flex-direction: row;
    justify-content: center;
+   flex-wrap: wrap;
    list-style: none;
    /* text-align: center; */
  }
  
- nav ul li {
+ .nav ul li {
    /* display: inline-block; */
    margin-right: 1rem; 
    column-gap: 1em;
@@ -94,7 +105,7 @@
  
  /*** Meginmál ***/
  
- main {
+ .main {
    margin: 0 auto;
    padding-left: 1rem;
    padding-right: 1rem;
@@ -103,7 +114,7 @@
  
  /*** Fótur ***/
  
- footer {
+ .footer {
    margin-top: 1rem;
    padding: 1rem;
    border-top: 8px solid #ffe7ae;
@@ -114,12 +125,12 @@
    text-align: center;
  }
  
- footer > section {
+ .footer > section {
    display: inline-block;
    vertical-align: top;
  }
  
- footer ul {
+ .footer ul {
    list-style: none;
    text-align: center;
  }
@@ -127,6 +138,10 @@
  /*** Box! ***/
  
  .boxes {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* gap: var(--spacing); */
    margin-bottom: 2rem;
    padding-bottom: 1rem;
    /* border-bottom: 2px solid #ffe7ae; */
@@ -141,6 +156,7 @@
  
    vertical-align: top;
    background-color: #fff1cf;
+   border-radius: 6px;
    padding: 1rem;
  }
  
@@ -149,6 +165,8 @@
    margin-top: 1rem;
    font-weight: bold;
  }
+
+ 
  
  /*** Opnunartími ***/
  
@@ -210,6 +228,21 @@
  form button {
    padding: 0.25rem;
    border-radius: 6px;
+   width: 100%;
+   border-top: 0.1rem solid lightgray;
+   border-left: 0.1rem solid lightgray;
+   border-right: 0.1rem solid gray;
+   border-bottom: 0.1rem solid gray;
+ }
+
+
+ .boxes .box-title h3{
+   border-bottom: 2px solid #2f0505;
+ }
+
+ .boxes .box-border{
+   border: 2px solid #2f0505;
+   
  }
 
 
