@@ -15,6 +15,37 @@
  *:after {
    box-sizing: inherit;
  }
+ /* Leturgerðir */
+
+/** Hér skal skilgreina leturgerðir **/
+
+ /* Stillingar */
+
+:root {
+  /* Grunn bilið okkar er 1rem == 16px */
+  --font-base-body-px: 16px;
+  --spacing: 1rem;
+
+  /* Hámarksbreidd á efni */
+  --max-width: 900px;
+
+  /* Border breiddir */
+  --border-small: 1px;
+  --border-large: 8px;
+  --border-radius: 6px;
+
+  /* Litir */
+  --color-gold: #ffe7ae;
+  --color-gold-light: #fff1cf;
+  --color-dark: #2f0505;
+  --color-light: #fff9ee;
+
+  /* Letur stillingar */
+  --font-base-size: 1rem;
+  --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Lora', Georgia, serif;
+}
+
 
 
 
@@ -38,12 +69,18 @@
  select,
  button {
    font-size: 16px;
-   font-family: 'Lora', serif;
+   font-family:'Noto Sans Display', Helvetica, Arial, sans-serif;
  }
  
  a {
    color: inherit;
  }
+ h1,
+ h2,
+ h3 {
+  font-family: 'Lora', serif;
+ }
+
  
  h2,
  h3,
@@ -57,35 +94,36 @@
  }
  
  img {
-   max-width: 100%;
-   object-fit: contain;
-   object-position: 50%  50%;
+  display: flex;
+   max-width: 400px;
+   object-fit: cover;
+   object-position: top center;
  }
  
  /*** Haus ***/
  
  .header {
-   padding: 1rem;
- 
-   background-color: #2f0505;
-   color: #fff1cf;
+   padding: var(--spacing);
+  
+   background-color: var(--color-dark);
+   color: var(--color-gold-light);
  
    text-align: center;
  }
 
  .header > p {
-   padding-top: 1rem;
+   padding-top: var(--spacing);
  }
  
  /*** Valmynd ***/
  
  .nav {
-   margin-bottom: 1rem;
-   padding: 1rem;
-   border-bottom: 8px solid #ffe7ae;
+   margin-bottom: var(--spacing);
+   padding: var(--spacing);
+   border-bottom: 8px solid var(--color-gold);
  
-   background-color: #fff9ee;
-   color: #2f0505;
+   background-color: var(--color-light);
+   color: var(--color-dark);
  }
  
  .nav ul {
@@ -99,16 +137,16 @@
  
  .nav ul li {
    /* display: inline-block; */
-   margin-right: 1rem; 
-   column-gap: 1em;
+   margin-right: var(--spacing); 
+   column-gap: var(--spacing);
  }
  
  /*** Meginmál ***/
  
  .main {
    margin: 0 auto;
-   padding-left: 1rem;
-   padding-right: 1rem;
+   padding-left: var(--spacing);
+   padding-right: var(--spacing);
    max-width: 900px;
  }
  
@@ -117,17 +155,19 @@
  .footer {
    margin-top: 1rem;
    padding: 1rem;
-   border-top: 8px solid #ffe7ae;
- 
-   background-color: #2f0505;
-   color: #fff1cf;
- 
+   border-top: 8px solid var(--color-gold);
+   background-color: var(--color-dark);
+   color: var(--color-gold-light);
    text-align: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
  }
  
- .footer > section {
-   display: inline-block;
-   vertical-align: top;
+ .footer section {
+   /* width: calc(50% - var(--spacing) * 0.5); */
+   /* gap: var(--spacing); */
+   /* vertical-align: top; */
  }
  
  .footer ul {
@@ -141,29 +181,40 @@
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   /* gap: var(--spacing); */
-   margin-bottom: 2rem;
+   gap: var(--spacing);
+   margin-bottom: 1rem;
    padding-bottom: 1rem;
    /* border-bottom: 2px solid #ffe7ae; */
  }
  
  .boxes .box {
-   display: inline-block;
- 
-   margin-bottom: 1rem;
-   margin-right: 1%;
-   width: 48%;
- 
-   vertical-align: top;
-   background-color: #fff1cf;
-   border-radius: 6px;
-   padding: 1rem;
+  background-color: var(--color-gold-light);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(50% - var(--spacing) * 0.5);
+  /* gap: var(--spacing); */
+  vertical-align: top;
+  border-radius: 6px;
+  padding: var(--spacing);
+  margin-bottom: 1rem;
+ }
+
+ .extra-info {
+  flex: 1;
+ }
+
+ .boxes .box .buttons{
+  display: flex;
+  flex: 0;
  }
  
  .boxes .box a {
    display: flex;
    margin-top: 1rem;
    font-weight: bold;
+
  }
 
  
@@ -191,14 +242,14 @@
  }
  
  table tbody tr:nth-child(2n + 1) {
-   background-color: #ffe7ae;
+   background-color: var(--color-gold);
  }
  
  /*** Pöntunarform ***/
  
  fieldset {
    margin-bottom: 1rem;
-   border: 1px solid #ffe7ae;
+   border: 1px solid var(--color-gold);
    padding: 1rem;
  }
  
@@ -237,12 +288,20 @@
 
 
  .boxes .box-title h3{
-   border-bottom: 2px solid #2f0505;
+   border-bottom: 2px solid var(--color-dark);
  }
 
  .boxes .box-border{
-   border: 2px solid #2f0505;
+   border: 2px solid var(--color-dark);
    
+ }
+
+ .how-many{
+  flex: 1;
+ }
+
+ .anything{
+  flex: 4;
  }
 
 
