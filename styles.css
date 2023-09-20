@@ -153,8 +153,8 @@
  /*** Fótur ***/
  
  .footer {
-   margin-top: 1rem;
-   padding: 1rem;
+   margin-top: var(--spacing);
+   padding: var(--spacing);
    border-top: 8px solid var(--color-gold);
    background-color: var(--color-dark);
    color: var(--color-gold-light);
@@ -162,12 +162,6 @@
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
- }
- 
- .footer section {
-   /* width: calc(50% - var(--spacing) * 0.5); */
-   /* gap: var(--spacing); */
-   /* vertical-align: top; */
  }
  
  .footer ul {
@@ -182,8 +176,8 @@
    flex-direction: row;
    flex-wrap: wrap;
    gap: var(--spacing);
-   margin-bottom: 1rem;
-   padding-bottom: 1rem;
+   margin-bottom: var(--spacing);
+   padding-bottom: var(--spacing);
    /* border-bottom: 2px solid #ffe7ae; */
  }
  
@@ -198,7 +192,7 @@
   vertical-align: top;
   border-radius: 6px;
   padding: var(--spacing);
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing);
  }
 
  .extra-info {
@@ -226,13 +220,13 @@
  }
  
  dd {
-   margin-bottom: 1rem;
+   margin-bottom: var(--spacing);
  }
  
  /*** Matseðill ***/
  
  table {
-   margin-bottom: 1rem;
+   margin-bottom: var(--spacing);
    border-spacing: 0;
  }
  
@@ -248,9 +242,9 @@
  /*** Pöntunarform ***/
  
  fieldset {
-   margin-bottom: 1rem;
+   margin-bottom: var(--spacing);
    border: 1px solid var(--color-gold);
-   padding: 1rem;
+   padding: var(--spacing);
  }
  
  fieldset legend {
@@ -258,7 +252,7 @@
  }
  
  fieldset div {
-   margin-bottom: 1rem;
+   margin-bottom: var(--spacing);
  }
  
  fieldset div label {
