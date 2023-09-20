@@ -68,7 +68,7 @@
  input,
  select,
  button {
-   font-size: 16px;
+   font-size: var(--font-base-body-px);
    font-family:'Noto Sans Display', Helvetica, Arial, sans-serif;
  }
  
@@ -85,7 +85,7 @@
  h2,
  h3,
  section {
-   margin-bottom: 1rem;
+   margin-bottom: var(--spacing);
  }
 
  .wrapper{
@@ -120,7 +120,7 @@
  .nav {
    margin-bottom: var(--spacing);
    padding: var(--spacing);
-   border-bottom: 8px solid var(--color-gold);
+   border-bottom: var(--border-large) solid var(--color-gold);
  
    background-color: var(--color-light);
    color: var(--color-dark);
@@ -147,7 +147,7 @@
    margin: 0 auto;
    padding-left: var(--spacing);
    padding-right: var(--spacing);
-   max-width: 900px;
+   max-width: var(--max-width);
  }
  
  /*** Fótur ***/
@@ -155,18 +155,20 @@
  .footer {
    margin-top: var(--spacing);
    padding: var(--spacing);
-   border-top: 8px solid var(--color-gold);
+   border-top: var(--border-large) solid var(--color-gold);
    background-color: var(--color-dark);
    color: var(--color-gold-light);
-   text-align: center;
    display: flex;
    flex-wrap: wrap;
+   text-align: center; /* ATH ÞETTA ER RANGT!!!!, FÁ HJÁLP*/
    justify-content: center;
+   align-items: center top;
  }
  
  .footer ul {
    list-style: none;
-   text-align: center;
+   /* align-content: center; */
+   /* text-align: center; */
  }
  
  /*** Box! ***/
@@ -176,8 +178,14 @@
    flex-direction: row;
    flex-wrap: wrap;
    gap: var(--spacing);
-   margin-bottom: var(--spacing);
-   padding-bottom: var(--spacing);
+   /* margin-bottom: var(--spacing); */
+   /* padding-bottom: var(--spacing); */
+   border-top: var(--border-large);
+   border-bottom: var(--border-large);
+   border-left: var(--border-small);
+   border-right: var(--border-small);
+
+   /* flex: 1; */
    /* border-bottom: 2px solid #ffe7ae; */
  }
  
@@ -190,29 +198,31 @@
   width: calc(50% - var(--spacing) * 0.5);
   /* gap: var(--spacing); */
   vertical-align: top;
-  border-radius: 6px;
+  border-radius: var(--border-radius);
   padding: var(--spacing);
   margin-bottom: var(--spacing);
  }
 
- .extra-info {
+ .order-info {
   flex: 1;
  }
 
- .boxes .box .buttons{
+ 
+ .anything-to-say{
+  flex: 5;
+ }
+ .buttons{
   display: flex;
   flex: 0;
  }
  
  .boxes .box a {
    display: flex;
-   margin-top: 1rem;
+   margin-top: var(--spacing);
    font-weight: bold;
 
  }
- .wrapper .box .order-button{
-  flex: 5;
- }
+ 
 
  
  
@@ -246,7 +256,7 @@
  
  fieldset {
    margin-bottom: var(--spacing);
-   border: 1px solid var(--color-gold);
+   border: var(--border-small) solid var(--color-gold);
    padding: var(--spacing);
  }
  
@@ -259,7 +269,7 @@
  }
  
  fieldset div label {
-   display: block;
+   display: flex;
  }
  
  fieldset input,
@@ -269,13 +279,16 @@
  }
  
  fieldset input[type='checkbox'] {
-   display: inline-block;
-   margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+   /* display: inline-block; */
+   /* flex-wrap: wrap; */
+   margin-right: 0.5rem;   /* ATH þetta á ekki að vera svona!!!!!*/
  }
  
  form button {
    padding: 0.25rem;
-   border-radius: 6px;
+   border-radius: var(--border-radius);
    width: 100%;
    border-top: 0.1rem solid lightgray;
    border-left: 0.1rem solid lightgray;
@@ -286,21 +299,15 @@
 
 
  .boxes .box-title h3{
-   border-bottom: 2px solid var(--color-dark);
+   border-bottom: var(--border-small) solid var(--color-dark);
  }
 
  .boxes .box-border{
-   border: 2px solid var(--color-dark);
-   
+   border: var(--border-small) solid var(--color-dark);
  }
 
- .how-many{
-  flex: 1;
- }
 
- .anything-to-say{
-  flex: 4;
- }
+ 
 
 
 
