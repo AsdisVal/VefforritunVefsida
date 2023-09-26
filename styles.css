@@ -232,7 +232,8 @@ img {
 
 .boxes .box .link {
   margin-top: calc(var(--spacing) * 0.5);
-
+  background-color: var(--color-dark);
+  color: var(--color-light);
   font-weight: bold;
 }
 
@@ -291,4 +292,10 @@ fieldset .checkbox label {
 form button {
   padding: calc(var(--spacing) * 0.25);
   border-radius: var(--border-radius);
+}
+button{
+  padding: var(--border-large) var(--border-large);
+  border-radius: var(--border-radius);
+  background-color: var(--color-dark);
+  color: var(--color-light);
 }
