@@ -38,8 +38,12 @@ html {
   --font-base-body-px: 16px;
   --spacing: 1rem;
 
+  /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
+  --vertical-space: calc(var(--gutter));
+
   /* Hámarksbreidd á efni */
-  --max-width: 900px;
+  --max-width: 1400px;
+  --width-offset: calc(100% - (2 * var(--offset)));
 
   /* Border breiddir */
   --border-small: 1px;
@@ -57,10 +61,20 @@ html {
   --color-text: #000;
   --color-border: #ccc;
 
+  /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+
   /* Letur stillingar */
   --font-base-size: 1rem;
   --font-family-base: 'Noto Sans Display', Helvetica, Arial, sans-serif;
   --font-family-heading: 'Lora', Georgia, serif;
+
+  /* Transitions */
+  --transition-time-short: 300ms;
+  --transition-time-long: 600ms;
+  --transition-timing-function: ease-in-out;
 }
 
 /* Almennt */
@@ -102,15 +116,54 @@ img {
   width: 1px;
 }
 
+/* Takki */
+
+.link {
+  text-align: center;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid var(--color-dark);
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+/** Útfæra takka + kvikun **/
+
+.link:hover {
+  background-color: var(--color-light); 
+  color: var(--color-dark); 
+  border: 1px solid var(--color-dark);
+}
+
+
+/* Kvikun */
+
+
+
+/** Útfæra kvikun á efni þegar síða opnuð **/
+
 /* Layout */
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  justify-content: center;
   gap: var(--spacing);
 
   min-height: 100vh;
 }
+
+
+/** Útfæra layout með grid **/
+
+
 
 /** Haus **/
 
@@ -132,6 +185,9 @@ img {
   align-items: center;
 }
 
+/** Útfæra haus með grid **/
+
+
 /** Valmynd **/
 
 .navigation {
@@ -152,27 +208,27 @@ img {
   list-style: none;
 }
 
+/** Útfæra valmynd með grid **/
+
+
 /** Meginmál **/
 
 .main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing);
-
+  display: grid;
+  grid-template-columns: 100%;
+  gap: var(--vertical-space);
   margin: 0 auto;
-  padding-left: var(--spacing);
-  padding-right: var(--spacing);
-  width: 100%;
+  width: var(--width-offset);
   max-width: var(--max-width);
 }
+
+/** Útfæra meginmál með grid **/
+
 
 /** Fótur **/
 
 .footer {
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing);
+  
 
   padding: var(--spacing);
   border-top: var(--border-large) solid var(--color-gold);
@@ -182,18 +238,28 @@ img {
 
   text-align: center;
 }
-
-.footer ul {
-  list-style: none;
+.footcontent{
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: var(--spacing);
+  text-align: center;
 }
+.footer ul {
+
+  list-style: none;
+
+}
+
+/** Útfæra fót með grid **/
+
 
 /* Box! */
 
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: calc(var(--spacing) * 2) var(--spacing);
-
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: var(--vertical-space);
+  grid-template-rows: auto;
   margin-bottom: calc(var(--spacing) * 2);
   width: 100%;
 }
@@ -203,7 +269,9 @@ img {
   flex-direction: column;
   gap: var(--spacing);
   padding: calc(var(--spacing) * 0.5);
+  width: 100%;
   /* width: calc(50% - var(--spacing) * 0.5); */
+  grid-column: span 12;
   min-height: 100px;
   color: var(--color-dark);
   background-color: var(--color-gold-light);
@@ -233,6 +301,16 @@ img {
   color: var(--color-light);
   font-weight: bold;
 }
+.boxes .box .link:hover {
+  background-color: var(--color-light); 
+  color: var(--color-dark); 
+  border: 1px solid var(--color-dark);
+}
+
+/** Útfæra box með grid **/
+
+
+
 
 /* Opnunartími */
 
@@ -253,6 +331,7 @@ table {
 table th,
 table td {
   padding: calc(var(--spacing) * 0.5);
+  text-align: left;
 }
 
 table tbody tr:nth-child(2n + 1) {
@@ -290,9 +369,4 @@ form button {
   padding: calc(var(--spacing) * 0.25);
   border-radius: var(--border-radius);
 }
-button{
-  padding: var(--border-large) var(--border-large);
-  border-radius: var(--border-radius);
-  background-color: var(--color-dark);
-  color: var(--color-light);
-}
+
