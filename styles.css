@@ -166,11 +166,14 @@ img {
   justify-content: center;
   /* gap: var(--spacing); */
   min-height: 100vh;
-  animation: var(--transition-time-long) ease-in-out fade;
+  animation: var(--transition-time-long) var(--transition-timing-function) fade;
 }
 
 
 /** Útfæra layout með grid **/
+
+/** Haus **/
+
 
 /** Haus **/
 
@@ -179,11 +182,18 @@ img {
   flex-direction: column;
   align-items: center;
   gap: var(--spacing);
+
   border-bottom: var(--border-large) solid var(--color-gold);
+
   background-color: var(--color-dark);
   color: var(--color-gold-light);
 }
 
+.header header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /** Útfæra haus með grid **/
 
@@ -326,7 +336,7 @@ img {
 .boxes .box .link:hover {
   background-color: var(--color-light); 
   color: var(--color-dark); 
-  border: 1px solid var(--color-dark);
+  border: var(--border-small) solid var(--color-dark);
 }
 
 /** Útfæra box með grid **/
@@ -464,3 +474,15 @@ form button {
     grid-column-start: 8;
   }
 }
+
+.links-for-two{
+  margin-top: 2rem;
+}
+/*
+@media (min-width: 450px){
+  .boxes .box img {
+   
+  }
+
+}
+*/
