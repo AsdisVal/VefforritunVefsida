@@ -230,8 +230,8 @@ img {
 
 .footer {
   margin: 0 auto;
-  width: calc(100% - (2 * var(--offset)));
-  /* width: 100%; */
+  /* width: calc(100% - (2 * var(--offset))); */
+  width: 100%;
   max-width: var(--max-width);
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
