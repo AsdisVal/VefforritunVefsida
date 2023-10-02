@@ -383,6 +383,10 @@ fieldset textarea {
   width: 100%;
 }
 
+#size{
+  background-color: var(--color-primary);
+}
+
 
 
 fieldset .checkbox label {
