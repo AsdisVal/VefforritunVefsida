@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "sass": "^1.68.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "stylelint": "^15.10.3"
+  },
+  "name": "v2til6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
