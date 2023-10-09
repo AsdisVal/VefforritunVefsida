@@ -56,11 +56,6 @@ html {
   --color-dark: #2f0505;
   --color-light: #fff9ee;
 
-  --color-primary: #f0f0f8;
-  --color-header: #fff;
-  --color-text: #000;
-  --color-border: #ccc;
-
   /* Grid stillingar */
   --columns: 12;
   --gutter: 30px;
@@ -116,54 +111,62 @@ img {
   width: 1px;
 }
 
-
-@keyframes fade {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-   }
-}
-
 /* Takki */
 
-.link {
-  text-align: center;
-  background-color: var(--color-dark);
-  color: var(--color-gold-light);
-  border-radius: 4px;
+.button {
+  display: inline-block;
+
+  border: 1px solid var(--color-dark);
+  border-radius: var(--border-radius);
+  padding: calc(var(--spacing) / 2) calc(var(--spacing));
+
+  font-family: var(--font-family-base);
   text-decoration: none;
-  padding: 6px;
-  font-family: inherit;
-  font-size: 1rem;
-  border: 1px solid var(--color-dark);
-  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  text-align: center;
+
+  color: var(--color-light);
+  background-color: var(--color-dark);
+
+  transition: background-color var(--transition-time-short)
+      var(--transition-timing-function),
+    color var(--transition-time-short);
 }
 
-/** Útfæra takka + kvikun **/
-
-.link:hover {
-  background-color: var(--color-gold); 
-  color: var(--color-dark); 
-  border: 1px solid var(--color-dark);
+.button:hover {
+  color: var(--color-dark);
+  background-color: var(--color-gold);
 }
 
+/* Fade in animation */
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header,
+.main {
+  animation: var(--transition-time-long) var(--transition-timing-function) fade-in;
+}
 
 
 /* Layout */
 
 .wrapper {
   display: grid;
-  grid-template-columns: 100%;
   grid-template-rows: auto;
-  justify-content: center;
-  /* gap: var(--spacing); */
-  min-height: 100vh;
-  animation: var(--transition-time-long) var(--transition-timing-function) fade;
-}
+  grid-template-columns: 100%;
 
+  /* grid items eru miðjuð */
+  justify-items: center;
+
+  gap: var(--vertical-space);
+}
 
 /** Haus **/
 
@@ -172,6 +175,9 @@ img {
   flex-direction: column;
   align-items: center;
   gap: var(--spacing);
+
+  padding-top: var(--spacing);
+  width: 100%;
   border-bottom: var(--border-large) solid var(--color-gold);
 
   background-color: var(--color-dark);
@@ -182,93 +188,89 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  max-width: var(--width-offset);
+
+  text-align: center;
 }
-
-/** Útfæra haus með grid **/
-
 
 /** Valmynd **/
 
 .navigation {
-  padding: var(--spacing);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--spacing) 0;
   width: 100%;
+
   background-color: var(--color-light);
   color: var(--color-dark);
 }
 
 .navigation ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: var(--spacing);
 
   width: 100%;
+  max-width: var(--width-offset);
 
   list-style: none;
 }
-
-/** Útfæra valmynd með grid **/
-
 
 /** Meginmál **/
 
 .main {
   display: grid;
+  grid-template-rows: auto;
   grid-template-columns: 100%;
   gap: var(--vertical-space);
-  margin: var(--vertical-space) auto;
+
   width: var(--width-offset);
   max-width: var(--max-width);
-
-
-
 }
-
-/** Útfæra meginmál með grid **/
-
 
 /** Fótur **/
 
 .footer {
-  margin: 0 auto;
-  /* width: calc(100% - (2 * var(--offset))); */
-  width: 100%;
-  max-width: var(--max-width);
-  display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  gap: var(--gutter);
-
   padding: var(--spacing);
   border-top: var(--border-large) solid var(--color-gold);
+  width: 100%;
+
   background-color: var(--color-dark);
   color: var(--color-gold-light);
-
-  /* text-align: center; */
 }
-.footcontent{
-  /* border: 2px red solid; */
-  /* display: grid; */
-  /* grid-template-columns: repeat(var(--columns), 1fr); */
-  gap: var(--gutter);
-  
-  grid-column: span 4;
-  gap: var(--spacing);
+
+.footer .content {
+  display: grid;
+  gap: var(--vertical-space);
+
+  margin: 0 auto;
+
   text-align: center;
-
 }
 
+@media (min-width: 500px) {
+  .footer .content {
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: auto;
 
+    max-width: var(--max-width);
+  }
 
+  .footer section {
+    grid-column-end: span 4;
+  }
 
-
+  .footer section:first-child {
+    grid-column-start: 3;
+  }
+}
 
 .footer ul {
-
   list-style: none;
-
 }
-
-/** Útfæra fót með grid **/
-
 
 /* Box! */
 
@@ -276,21 +278,45 @@ img {
   display: grid;
   grid-template-rows: auto;
   gap: var(--vertical-space);
-  /* margin-bottom: calc(var(--spacing) * 2); */
+  justify-items: center;
+
   width: 100%;
 }
 
+@media (min-width: 500px) {
+  .boxes {
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: auto;
+  }
+}
+
 .boxes .box {
+  grid-column: span 12;
+
   display: flex;
   flex-direction: column;
+
   gap: var(--spacing);
+
   padding: calc(var(--spacing) * 0.5);
   width: 100%;
-  /* width: calc(50% - var(--spacing) * 0.5); */
   min-height: 100px;
+
   color: var(--color-dark);
   background-color: var(--color-gold-light);
   border-radius: 5px;
+}
+
+@media (min-width: 500px) {
+  .boxes .box {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 1000px) {
+  .boxes .box {
+    grid-column: span 4;
+  }
 }
 
 .boxes .box .title {
@@ -303,31 +329,17 @@ img {
 }
 
 .boxes .box img {
-
   max-height: 400px;
 
   object-fit: cover;
   object-position: top center;
 }
 
-.boxes .box .link {
-  margin-top: calc(var(--spacing) * 0.5);
-  background-color: var(--color-dark);
-  color: var(--color-gold-light);
-  font-weight: bold;
-  padding: var(--spacing);
+@media (min-width: 1000px) {
+  .boxes .box img {
+    max-height: 350px;
+  }
 }
-
-.boxes .box .link:hover {
-  background-color: var(--color-gold); 
-  color: var(--color-dark); 
-  border: var(--border-small) solid var(--color-dark);
-}
-
-/** Útfæra box með grid **/
-
-
-
 
 /* Opnunartími */
 
@@ -375,19 +387,12 @@ fieldset input,
 fieldset select,
 fieldset textarea {
   padding: calc(var(--spacing) * 0.5);
-  /* width: 100%; */
-}
-
-/*Þetta lætur alla kassana fara að nýta plássið sitt*/
-#when, #size, #special, #food1, #food2, #food3, #food4, #food5, #address, #name, #email, #phone{
   width: 100%;
 }
 
-#size{
-  background-color: var(--color-primary);
+fieldset input[type='checkbox'] {
+  width: auto;
 }
-
-
 
 fieldset .checkbox label {
   flex-direction: row;
@@ -398,81 +403,3 @@ form button {
   padding: calc(var(--spacing) * 0.25);
   border-radius: var(--border-radius);
 }
-
-@media (min-width: 500px){
-  .boxes{
-    grid-template-columns: repeat(var(--columns), 1fr);
-  }
-  .boxes .box{
-    grid-column:span 12;
-  }
-}
-
-@media (min-width: 1000px){
-  .boxes .box{
-    grid-column: span 6;
-  }
-  
-}
-
-@media (min-width: 1400px){
-  .boxes .box{
-    grid-column: span 4;
-  }
-  
-}
-
-
-
-@media (min-width: 400px){
-  .footcontent-1 {
-    grid-column-end: span 6;
-  }
-  .offset-2 {
-    grid-column-start: 3;
-  }  
-  .footcontent-2 { 
-    grid-column-end: span 6;
-  }
-  .offset-4 {
-    grid-column-start: 3;
-  }
-}
-
-
-@media (min-width: 1000px){
-  .footcontent-1 {
-    grid-column-end: span 4;
-  }
-  .offset-2 {
-    grid-column-start: 3;
-  }  
-  .footcontent-2 { 
-    grid-column-end: span 4;
-  }
-  .offset-4 {
-    grid-column-start: 7;
-  }
-}
-
-
-
-@media (min-width: 1400px){
-  .footcontent-1 {
-    grid-column-end: span 2;
-  }
-  .offset-2 {
-    grid-column-start: 4;
-  }  
-  .footcontent-2 { 
-    grid-column-end: span 2;
-  }
-  .offset-4 {
-    grid-column-start: 8;
-  }
-}
-
-.links-for-two{
-  margin-top: 2rem;
-}
-
