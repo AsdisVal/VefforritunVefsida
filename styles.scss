@@ -1,15 +1,18 @@
-@import './styles/reset';
-@import './styles/config';
-@import './styles/base';
-@import './styles/fonts';
+@import './styles/reset'; //1
+@import './styles/fonts'; //2
+@import './styles/config'; //3
+@import './styles/base'; //4
+@import './styles/button'; //5
+@import './styles/animation'; // 6
+@import './styles/header'; // 7
+@import './styles/nav'; // 8
+@import './styles/main'; // 9
+@import './styles/footer'; // 10
+@import './styles/boxes'; // 11
+@import './styles/opening-hours'; // 12
+@import './styles/menu'; // 13
+@import './styles/order-form'; // 14
 
-
-@import './styles/boxes';
-@import './styles/button';
-@import './styles/header';
-@import './styles/main';
-@import './styles/footer';
-@import './styles/nav';
 
 
 
