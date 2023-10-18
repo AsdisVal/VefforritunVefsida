@@ -122,10 +122,12 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 .header,
 .main {
   animation: var(--transition-time-long) var(--transition-timing-function) fade-in;
@@ -153,6 +155,7 @@ img {
   background-color: var(--color-dark);
   color: var(--color-gold-light);
 }
+
 .header header {
   display: flex;
   flex-direction: column;
@@ -200,12 +203,14 @@ img {
   background-color: var(--color-dark);
   color: var(--color-gold-light);
 }
+
 .footer .content {
   display: grid;
   gap: var(--vertical-space);
   margin: 0 auto;
   text-align: center;
 }
+
 .footer ul {
   list-style: none;
 }
@@ -216,9 +221,11 @@ img {
     grid-template-rows: auto;
     max-width: var(--max-width);
   }
+
   .footer section {
     grid-column-end: span 4;
   }
+
   .footer section:first-child {
     grid-column-start: 3;
   }
@@ -244,13 +251,16 @@ img {
   background-color: var(--color-gold-light);
   border-radius: 5px;
 }
+
 .box .title {
   margin-bottom: calc(var(--spacing) * 0.5);
   border-bottom: var(--border-small) solid var(--color-dark);
 }
+
 .box .content {
   flex: 1;
 }
+
 .box img {
   max-height: 400px;
   object-fit: cover;
@@ -278,6 +288,7 @@ img {
     max-height: 350px;
   }
 }
+
 /* Opnunartími */
 dt {
   font-weight: bold;
@@ -291,11 +302,13 @@ dd {
 table {
   border-spacing: 0;
 }
+
 table th,
 table td {
   padding: calc(var(--spacing) * 0.5);
   text-align: left;
 }
+
 table tbody tr:nth-child(2n+1) {
   color: var(--color-dark);
   background-color: var(--color-gold);
@@ -305,9 +318,11 @@ table tbody tr:nth-child(2n+1) {
 fieldset {
   border: var(--border-small) solid var(--color-dark);
 }
+
 fieldset legend {
   font-weight: bold;
 }
+
 fieldset input,
 fieldset select,
 fieldset textarea {
